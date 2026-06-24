@@ -1,0 +1,651 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+
+:root {
+  --seon-bg: #fdecf2;
+  --seon-bg-2: #fff7fa;
+  --seon-primary: #e61452;
+  --seon-primary-dark: #d90845;
+  --seon-primary-soft: #fbe7ef;
+  --seon-quote-pink: #f886a8;
+  --seon-text: #171717;
+  --seon-sub-text: #596274;
+  --seon-card: #ffffff;
+  --seon-shadow: 0 10px 24px rgba(214, 89, 130, 0.11);
+}
+
+.seon-screen {
+  position: relative;
+  width: 390px;
+  min-height: 694px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  color: var(--seon-text);
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background: radial-gradient(circle at 82% 10%, rgba(255, 255, 255, 0.96) 0 4%, transparent 29%),
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.72) 0 6%, transparent 32%),
+    linear-gradient(180deg, var(--seon-bg-2) 0%, var(--seon-bg) 44%, #fdeaf1 100%);
+}
+
+.seon-bg-watermark {
+  position: absolute;
+  left: 225px;
+  top: 86px;
+  width: 165px;
+  height: 145px;
+  opacity: 0.12;
+  border: 9px solid var(--seon-primary);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+}
+
+.seon-bg-watermark::before {
+  content: "";
+  position: absolute;
+  left: 72px;
+  top: 72px;
+  width: 124px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--seon-primary);
+  transform: rotate(-45deg);
+  transform-origin: left center;
+}
+
+.seon-bg-watermark::after {
+  content: "✦";
+  position: absolute;
+  right: -22px;
+  top: -14px;
+  font-size: 34px;
+  color: var(--seon-primary);
+  opacity: 0.4;
+}
+
+.seon-wm-dots {
+  position: absolute;
+  left: 30px;
+  top: 47px;
+  font-size: 31px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: var(--seon-primary);
+}
+
+.seon-bell {
+  position: absolute;
+  left: 331px;
+  top: 52px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background: transparent;
+  color: var(--seon-primary);
+  font-size: 20px;
+  line-height: 1;
+  padding: 0;
+}
+
+.seon-logo {
+  position: absolute;
+  left: 58px;
+  top: 38px;
+  width: 198px;
+  height: 58px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.seon-subtitle {
+  position: absolute;
+  left: 64px;
+  top: 109px;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.seon-top-disclaimer {
+  position: absolute;
+  left: 64px;
+  top: 130px;
+  width: 280px;
+  margin: 0;
+  color: #9a9a9a;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+
+.seon-disclaimer-strong {
+  color: #1e3a5f;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.seon-disclaimer-plain {
+  color: #9a9a9a;
+  font-weight: 400;
+}
+
+.seon-search-label {
+  position: absolute;
+  left: 64px;
+  top: 214px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--seon-primary);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.seon-icon-search {
+  width: 12px;
+  height: 12px;
+  border: 1.8px solid currentColor;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.seon-icon-search::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  width: 7px;
+  height: 2px;
+  border-radius: 99px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+.seon-search-mascot {
+  position: absolute;
+  left: 18px;
+  top: 244px;
+  width: 34px;
+  height: 31px;
+  object-fit: contain;
+}
+
+.seon-search-card {
+  position: absolute;
+  left: 51px;
+  top: 236px;
+  width: 295px;
+  height: 46px;
+  border-radius: 16px;
+  background: var(--seon-card);
+  box-shadow: var(--seon-shadow);
+}
+
+.seon-input {
+  position: absolute;
+  left: 21px;
+  top: 0;
+  width: 180px;
+  height: 46px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  color: var(--seon-text);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  font-family: inherit;
+}
+
+.seon-input::placeholder {
+  color: #898989;
+}
+
+.seon-info-wrap {
+  position: absolute;
+  right: 74px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.seon-info-btn {
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--seon-primary);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--seon-primary);
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.seon-info-tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: -4px;
+  background: #333;
+  color: #fff;
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 30;
+  letter-spacing: -0.03em;
+}
+
+.seon-info-tip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 8px;
+  border-width: 5px 4px 0;
+  border-style: solid;
+  border-color: #333 transparent transparent;
+}
+
+.seon-input-button {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  width: 57px;
+  height: 33px;
+  border: 0;
+  border-radius: 12px;
+  color: #fff;
+  background: var(--seon-primary);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+}
+
+.seon-tag-chips {
+  position: absolute;
+  left: 51px;
+  top: 292px;
+  width: 295px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.seon-tag-chip {
+  border: 0;
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-family: "Gamja Flower", "Pretendard", cursive, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: #a98e98;
+  background: #f3e1e8;
+  cursor: pointer;
+}
+
+.seon-tag-chip.is-active {
+  color: #fff;
+  background: var(--seon-primary);
+}
+
+.seon-chips {
+  position: absolute;
+  left: 51px;
+  top: 351px;
+  width: 295px;
+  display: flex;
+  gap: 8px;
+}
+
+.seon-banmal-toggle {
+  flex: 0 0 84px;
+  height: 38px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--seon-card);
+  box-shadow: var(--seon-shadow);
+  color: var(--seon-primary);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+}
+
+.seon-chip-wrap {
+  position: relative;
+}
+
+.seon-chip {
+  height: 38px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--seon-card);
+  box-shadow: var(--seon-shadow);
+  color: var(--seon-text);
+  display: flex;
+  align-items: center;
+  padding: 0 9px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.seon-chip-right { flex: 1; }
+
+.seon-icon-tone {
+  width: 16px;
+  height: 13px;
+  margin-right: 8px;
+  border: 2px solid var(--seon-primary);
+  border-radius: 4px 4px 4px 0;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.seon-icon-tone::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  bottom: -5px;
+  border-width: 3px 3px 0 0;
+  border-style: solid;
+  border-color: var(--seon-primary) transparent transparent transparent;
+}
+
+.seon-icon-user {
+  width: 20px;
+  height: 17px;
+  margin-right: 8px;
+  position: relative;
+  border: 2px solid var(--seon-primary);
+  border-top: 0;
+  border-radius: 20px 20px 3px 3px;
+  flex-shrink: 0;
+}
+
+.seon-icon-user::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  width: 7px;
+  height: 7px;
+  border: 2px solid var(--seon-primary);
+  border-radius: 50%;
+  background: transparent;
+  transform: translateX(-50%);
+}
+
+.seon-chip-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--seon-primary);
+}
+
+.seon-chevron {
+  margin-left: auto;
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid var(--seon-primary);
+  border-bottom: 2px solid var(--seon-primary);
+  transform: rotate(45deg) translateY(-3px);
+  flex-shrink: 0;
+}
+
+.seon-dropdown {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  width: 100%;
+  background: var(--seon-card);
+  border-radius: 10px;
+  box-shadow: var(--seon-shadow);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.seon-dropdown-item {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 10px 13px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--seon-text);
+  cursor: pointer;
+}
+
+.seon-dropdown-item:hover {
+  background: var(--seon-primary-soft);
+  color: var(--seon-primary-dark);
+}
+
+.seon-dropdown-item.is-active {
+  background: #efe4e8;
+  color: var(--seon-primary-dark);
+}
+
+.seon-result-section {
+  position: relative;
+  margin-top: 411px;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.seon-result-label {
+  position: relative;
+  left: 52px;
+  color: var(--seon-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.seon-fallback-notice {
+  margin: 12px auto 0;
+  width: 296px;
+  text-align: center;
+  color: #a98e98;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+
+.seon-quote-card {
+  position: relative;
+  margin: 12px auto 0;
+  width: 296px;
+  min-height: 99px;
+  padding: 16px 24px;
+  border-radius: 14px;
+  background: var(--seon-card);
+  box-shadow: var(--seon-shadow);
+  text-align: center;
+}
+
+.seon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: var(--seon-primary-soft);
+  color: var(--seon-primary);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: -0.03em;
+}
+
+.seon-quote-placeholder {
+  display: block;
+  width: 56px;
+  height: 76px;
+  object-fit: contain;
+  margin: 8px auto;
+}
+
+.seon-quote-notice {
+  margin: 16px 0;
+  color: var(--seon-primary-dark);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.5;
+}
+
+.seon-quote-open,
+.seon-quote-close {
+  position: absolute;
+  transform: translateY(-50%);
+  color: var(--seon-quote-pink);
+  font-size: 39px;
+  line-height: 1;
+  font-weight: 800;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.seon-quote-open { left: 8px; top: 26%; }
+.seon-quote-close { right: 8px; top: 74%; }
+
+.seon-quote-mascot {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  width: 34px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.seon-quote-main {
+  margin: 12px 0 0;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.4;
+}
+
+.seon-quote-sub {
+  margin: 8px 0 0;
+  color: #1b2a4a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.5;
+}
+
+.seon-quote-meta {
+  margin: 10px 0 0;
+  color: #898989;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.seon-quote-warning {
+  margin: 4px 0 0;
+  color: var(--seon-primary-dark);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.4;
+}
+
+.seon-principle {
+  position: relative;
+  margin: 12px auto 0;
+  width: 296px;
+  min-height: 99px;
+  padding: 16px 24px;
+  border-radius: 14px;
+  background: var(--seon-card);
+  box-shadow: var(--seon-shadow);
+  text-align: center;
+}
+
+.seon-principle h2 {
+  margin: 6px 0 8px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+}
+
+.seon-principle p {
+  margin: 0 0 5px;
+  color: #1b2a4a;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.5;
+}
+
+.seon-actions {
+  margin: 13px auto 0;
+  width: 292px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.seon-actions-row {
+  display: flex;
+  gap: 8px;
+}
+
+.seon-main-action {
+  height: 35px;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  background: var(--seon-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+}
+
+.seon-actions-row .seon-main-action {
+  width: auto;
+  flex: 1;
+}
+
+.seon-main-action.is-secondary {
+  background: var(--seon-primary-dark);
+}
+
+.seon-main-action span {
+  font-size: 15px;
+  line-height: 1;
+}
+

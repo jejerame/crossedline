@@ -1,0 +1,3494 @@
+{
+  "app_name": "선넘네",
+  "version": "4.0",
+  "language": "ko-KR",
+  "description": "한국 사회의 위계·체면·눈치 문화를 고려한 현실적인 무례한 말 대응 문장 데이터베이스",
+  "data_policy": {
+    "not_legal_or_medical_advice": true,
+    "no_personal_identifiers": true,
+    "copyright_note": "특정 게시글·댓글·영상·책의 문장을 복제하지 않고, 업로드 보고서의 원칙과 상황 유형을 바탕으로 재구성했습니다.",
+    "source_reliability_note": "업로드 보고서의 일부 출처는 자료 번호로만 표기되어 있어 실제 앱 배포 전 원출처 확인이 필요합니다."
+  },
+  "principles": [
+    {
+      "principle_label": "경계선 고지",
+      "principle_short": "불편한 주제 선 긋기",
+      "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+      "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+    },
+    {
+      "principle_label": "답변 거부",
+      "principle_short": "사생활 질문 닫기",
+      "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+      "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다."
+    },
+    {
+      "principle_label": "의미 묻기",
+      "principle_short": "말뜻 되묻기",
+      "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+      "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+    },
+    {
+      "principle_label": "1:1 전환",
+      "principle_short": "공개 망신 피하기",
+      "principle_display": "여럿이 있는 자리에서 맞받아치지 않고, 따로 이야기하자고 전환합니다.",
+      "principle_reason": "공개적인 충돌을 줄이면서도 문제 제기를 멈추지 않기 위해 사용합니다."
+    },
+    {
+      "principle_label": "반복 차단",
+      "principle_short": "같은 질문 멈추기",
+      "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+      "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다."
+    },
+    {
+      "principle_label": "시간 벌기",
+      "principle_short": "즉답 피하기",
+      "principle_display": "바로 대답하지 않고 확인하거나 생각할 시간을 확보합니다.",
+      "principle_reason": "위계가 있거나 감정이 올라온 상황에서 즉흥 반응을 줄이기 위해 사용합니다."
+    },
+    {
+      "principle_label": "요청 범위 명확화",
+      "principle_short": "할 수 있는 범위 정하기",
+      "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+      "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다."
+    },
+    {
+      "principle_label": "기록/보고 전환",
+      "principle_short": "말을 기록으로 남기기",
+      "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+      "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다."
+    },
+    {
+      "principle_label": "주제 전환",
+      "principle_short": "대화 방향 바꾸기",
+      "principle_display": "불필요한 사생활·평가 대화를 이어가지 않고 다른 주제로 넘깁니다.",
+      "principle_reason": "관계를 크게 해치지 않으면서 민감한 대화를 닫을 때 유용합니다."
+    },
+    {
+      "principle_label": "감정 반격 회피",
+      "principle_short": "차분하게 말하기",
+      "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+      "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다."
+    }
+  ],
+  "categories": [
+    "직장/상사",
+    "가족/친척/명절",
+    "외모/사생활",
+    "친구/지인",
+    "고객/진상"
+  ],
+  "situations": [
+    {
+      "id": "W001",
+      "category": "직장/상사",
+      "situation_title": "공개적으로 꼽주는 상사",
+      "rude_phrase_examples": [
+        "이 정도도 못 해?",
+        "다들 보세요, 이게 문제예요."
+      ],
+      "keywords": [
+        "공개비난",
+        "꼽주기",
+        "상사"
+      ],
+      "rude_type": "공개 비난",
+      "relationship_context": "상사/팀장",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "1:1 전환",
+          "principle_short": "공개 망신 피하기",
+          "principle_display": "여럿이 있는 자리에서 맞받아치지 않고, 따로 이야기하자고 전환합니다.",
+          "principle_reason": "공개적인 충돌을 줄이면서도 문제 제기를 멈추지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "높음",
+      "delivery_note": "목소리 톤을 최대한 낮추고 감정 표현을 최소화하여 이성적인 스탠스를 유지할 것.",
+      "replies": [
+        {
+          "reply_id": "W001-R1",
+          "tone": "정중하게",
+          "text": "필요한 부분만 말씀 주시면 바로 수정하겠습니다. 자세한 이야기는 따로 나누겠습니다.",
+          "risk_level": "낮음",
+          "use_when": "회의나 단체 대화방에서 공개적으로 지적받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "1:1 전환",
+          "principle_label": "1:1 전환",
+          "principle_short": "공개 망신 피하기",
+          "principle_display": "여럿이 있는 자리에서 맞받아치지 않고, 따로 이야기하자고 전환합니다.",
+          "principle_reason": "공개적인 충돌을 줄이면서도 문제 제기를 멈추지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "W001-R2",
+          "tone": "차갑게",
+          "text": "지금 그 얘기는 여기서 안 했으면 좋겠습니다. 따로 말씀해 주세요.",
+          "risk_level": "중간",
+          "use_when": "회의나 단체 대화방에서 공개적으로 지적받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "1:1 전환",
+          "principle_label": "1:1 전환",
+          "principle_short": "공개 망신 피하기",
+          "principle_display": "여럿이 있는 자리에서 맞받아치지 않고, 따로 이야기하자고 전환합니다.",
+          "principle_reason": "공개적인 충돌을 줄이면서도 문제 제기를 멈추지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "W001-R3",
+          "tone": "선 긋기",
+          "text": "이거 피드백 아니고 그냥 사람들 앞에서 저 깎아내리기 같은데요.",
+          "risk_level": "중간",
+          "use_when": "회의나 단체 대화방에서 공개적으로 지적받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "1:1 전환",
+          "principle_label": "1:1 전환",
+          "principle_short": "공개 망신 피하기",
+          "principle_display": "여럿이 있는 자리에서 맞받아치지 않고, 따로 이야기하자고 전환합니다.",
+          "principle_reason": "공개적인 충돌을 줄이면서도 문제 제기를 멈추지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W002",
+      "category": "직장/상사",
+      "situation_title": "회식 참석 강요",
+      "rude_phrase_examples": [
+        "오늘 회식은 무조건 와야지.",
+        "빠지면 팀워크 없는 거야."
+      ],
+      "keywords": [
+        "회식",
+        "강요",
+        "팀워크"
+      ],
+      "rude_type": "참석 강요",
+      "relationship_context": "상사/선배",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "W002-R1",
+          "tone": "정중하게",
+          "text": "오늘은 일이 있어서 못 갈 것 같아요. 필요한 얘기는 낼 들을게요!",
+          "risk_level": "낮음",
+          "use_when": "회식이 사실상 강제처럼 느껴질 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W002-R2",
+          "tone": "차갑게",
+          "text": "회식 참석이랑 업무 태도는 별개인 것 같은데요.",
+          "risk_level": "중간",
+          "use_when": "회식이 사실상 강제처럼 느껴질 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W002-R3",
+          "tone": "선 긋기",
+          "text": "회식도 결국 제 시간인데, 억지로 끌려가긴 싫어요.",
+          "risk_level": "중간",
+          "use_when": "회식이 사실상 강제처럼 느껴질 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W003",
+      "category": "직장/상사",
+      "situation_title": "퇴근 후 연락 강요",
+      "rude_phrase_examples": [
+        "퇴근했어도 바로 답해야지.",
+        "주말에 잠깐만 확인해."
+      ],
+      "keywords": [
+        "퇴근후연락",
+        "주말업무",
+        "업무시간"
+      ],
+      "rude_type": "업무시간 침범",
+      "relationship_context": "상사/거래처",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "높음",
+      "replies": [
+        {
+          "reply_id": "W003-R1",
+          "tone": "정중하게",
+          "text": "지금은 퇴근했어서, 내일 출근하면 바로 볼게요.",
+          "risk_level": "낮음",
+          "use_when": "반복적으로 퇴근 후·주말 업무 연락을 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W003-R2",
+          "tone": "차갑게",
+          "text": "업무 시간 끝나면 저도 퇴근한 사람이에요. 내일 처리할게요.",
+          "risk_level": "중간",
+          "use_when": "반복적으로 퇴근 후·주말 업무 연락을 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W003-R3",
+          "tone": "선 긋기",
+          "text": "퇴근 후 연락은 일단 캡처해 둘게요. 진짜 급한 건지부터 확인하고요.",
+          "risk_level": "중간",
+          "use_when": "반복적으로 퇴근 후·주말 업무 연락을 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W004",
+      "category": "직장/상사",
+      "situation_title": "요즘 애들 비하",
+      "rude_phrase_examples": [
+        "요즘 애들은 책임감이 없어.",
+        "라떼는 이러지 않았어."
+      ],
+      "keywords": [
+        "요즘애들",
+        "세대비하",
+        "책임감"
+      ],
+      "rude_type": "세대 비하",
+      "relationship_context": "상사/선배",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "W004-R1",
+          "tone": "정중하게",
+          "text": "구체적으로 어떤 부분이 문제였는지 말씀해 주시면 바로 고칠게요.",
+          "risk_level": "낮음",
+          "use_when": "개인 문제가 아닌 세대 프레임으로 비난받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W004-R2",
+          "tone": "차갑게",
+          "text": "세대 얘기는 됐고, 제 업무 얘기만 해 주세요.",
+          "risk_level": "중간",
+          "use_when": "개인 문제가 아닌 세대 프레임으로 비난받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W004-R3",
+          "tone": "선 긋기",
+          "text": "\"요즘 애들\" 말고 제 이름으로 불러 주세요, 그게 더 정확하실 거예요.",
+          "risk_level": "중간",
+          "use_when": "개인 문제가 아닌 세대 프레임으로 비난받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W005",
+      "category": "직장/상사",
+      "situation_title": "업무 외 잡일 강요",
+      "rude_phrase_examples": [
+        "이것도 네가 좀 해.",
+        "막내가 원래 이런 거 하는 거야."
+      ],
+      "keywords": [
+        "잡일",
+        "막내",
+        "역할범위"
+      ],
+      "rude_type": "역할 외 요구",
+      "relationship_context": "상사/선배",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "W005-R1",
+          "tone": "정중하게",
+          "text": "도와드릴 순 있는데, 지금 맡은 일부터 먼저 정리하고 할게요.",
+          "risk_level": "낮음",
+          "use_when": "업무 외 심부름이나 반복 잡일이 당연하게 배정될 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W005-R2",
+          "tone": "차갑게",
+          "text": "이건 제 일이 아닌데요. 누구 담당인지부터 확인할게요.",
+          "risk_level": "중간",
+          "use_when": "업무 외 심부름이나 반복 잡일이 당연하게 배정될 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W005-R3",
+          "tone": "선 긋기",
+          "text": "이거 제 일 아닌데요, 누가 맡을 건지부터 정하고 할게요.",
+          "risk_level": "중간",
+          "use_when": "업무 외 심부름이나 반복 잡일이 당연하게 배정될 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W006",
+      "category": "직장/상사",
+      "situation_title": "프리랜서/비정규직 비하",
+      "rude_phrase_examples": [
+        "프리랜서니까 싸게 해줘야지.",
+        "비정규직이면 이 정도는 해야지."
+      ],
+      "keywords": [
+        "프리랜서",
+        "비정규직",
+        "노동가치"
+      ],
+      "rude_type": "노동 가치 비하",
+      "relationship_context": "상사/클라이언트",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "높음",
+      "replies": [
+        {
+          "reply_id": "W006-R1",
+          "tone": "정중하게",
+          "text": "프리랜서든 아니든, 일한 만큼 받는 건 똑같아야 하는 거잖아요.",
+          "risk_level": "낮음",
+          "use_when": "고용 형태를 이유로 무시받거나 추가 노동을 요구받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W006-R2",
+          "tone": "차갑게",
+          "text": "고용 형태로 일 값 깎으려는 거, 그거 좀 별로예요.",
+          "risk_level": "중간",
+          "use_when": "고용 형태를 이유로 무시받거나 추가 노동을 요구받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W006-R3",
+          "tone": "선 긋기",
+          "text": "그 말 제 노동 후려치기로 들려요. 일 얘기는 비용이랑 범위로 해 주세요.",
+          "risk_level": "중간",
+          "use_when": "고용 형태를 이유로 무시받거나 추가 노동을 요구받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W007",
+      "category": "직장/상사",
+      "situation_title": "성별·나이로 업무 능력 무시",
+      "rude_phrase_examples": [
+        "여자가 이런 일 하기 어렵지 않나?",
+        "그 나이에 아직도 이걸 해?"
+      ],
+      "keywords": [
+        "성별비하",
+        "나이비하",
+        "차별"
+      ],
+      "rude_type": "차별적 평가",
+      "relationship_context": "상사/동료",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "높음",
+      "replies": [
+        {
+          "reply_id": "W007-R1",
+          "tone": "정중하게",
+          "text": "제가 뭘 못한 게 있으면 구체적으로 말씀해 주세요.",
+          "risk_level": "낮음",
+          "use_when": "성별·나이·경력으로 능력을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W007-R2",
+          "tone": "차갑게",
+          "text": "성별이나 나이는 업무랑 상관없는 얘기 같은데요.",
+          "risk_level": "중간",
+          "use_when": "성별·나이·경력으로 능력을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W007-R3",
+          "tone": "선 긋기",
+          "text": "그거 차별로 들려요. 제 결과물로만 봐 주세요.",
+          "risk_level": "중간",
+          "use_when": "성별·나이·경력으로 능력을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W008",
+      "category": "직장/상사",
+      "situation_title": "보고서 비난",
+      "rude_phrase_examples": [
+        "보고서가 왜 이 모양이야?",
+        "생각하고 만든 거 맞아?"
+      ],
+      "keywords": [
+        "보고서",
+        "질책",
+        "업무피드백"
+      ],
+      "rude_type": "업무 비난/모욕",
+      "relationship_context": "상사",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "W008-R1",
+          "tone": "정중하게",
+          "text": "방향이 좀 다르게 나왔나 봐요. 어디를 고치면 될지 알려주시면 바로 할게요.",
+          "risk_level": "낮음",
+          "use_when": "업무 결과물에 대한 지적이 인격 비난처럼 들릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감정 반격 회피",
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W008-R2",
+          "tone": "차갑게",
+          "text": "말투는 아쉽지만, 어디 고칠지만 말씀해 주세요.",
+          "risk_level": "중간",
+          "use_when": "업무 결과물에 대한 지적이 인격 비난처럼 들릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감정 반격 회피",
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "W008-R3",
+          "tone": "선 긋기",
+          "text": "피드백은 듣는데요, 사람 갈아버리는 식으로 말하는 건 좀 빼주세요.",
+          "risk_level": "중간",
+          "use_when": "업무 결과물에 대한 지적이 인격 비난처럼 들릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감정 반격 회피",
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "W009",
+      "category": "직장/상사",
+      "situation_title": "무례한 말 합리화하는 동료",
+      "rude_phrase_examples": [
+        "우리 동네에선 이게 친근한 표현이야."
+      ],
+      "keywords": [
+        "논리합리화",
+        "되돌리기",
+        "역지사지"
+      ],
+      "rude_type": "무례함 합리화",
+      "relationship_context": "동료",
+      "power_gap": "낮음",
+      "recommended_principles": [
+        {
+          "principle_label": "역지사지 논리 되돌려주기",
+          "principle_short": "같은 논리 그대로 돌려주기",
+          "principle_display": "상대가 자기 무례함을 정당화한 논리를 그대로 가져와 동일하게 적용해 되돌려줍니다.",
+          "principle_reason": "말로 따지는 대신 같은 기준을 상대에게도 적용해보면, 그 기준이 얼마나 일방적인지 스스로 느끼게 됩니다."
+        }
+      ],
+      "risk_level": "중간",
+      "delivery_note": "상대가 쓴 표현을 그대로 사용해 들려주는 것이 포인트. 단, 그 표현이 비하·차별적 표현일 경우엔 이 기법을 쓰지 말 것 — 가벼운 반말/속어 수준일 때만 사용.",
+      "replies": [
+        {
+          "reply_id": "W009-R1",
+          "tone": "정중하게",
+          "text": "저도 친근하게 (상대의 단어)라고 불러도 될까요?",
+          "risk_level": "중간",
+          "use_when": "상대가 무례한 표현을 지역/문화 핑계로 합리화할 때",
+          "avoid_when": "상대가 쓴 표현이 비하·차별적 발언일 때 (이 경우 미러링 대신 바로 선을 그어야 함)",
+          "principle": "역지사지 논리 되돌려주기",
+          "principle_label": "역지사지 논리 되돌려주기",
+          "principle_short": "같은 논리 그대로 돌려주기",
+          "principle_display": "상대가 자기 무례함을 정당화한 논리를 그대로 가져와 동일하게 적용해 되돌려줍니다.",
+          "principle_reason": "말로 따지는 대신 같은 기준을 상대에게도 적용해보면, 그 기준이 얼마나 일방적인지 스스로 느끼게 됩니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)",
+          "text_banmal": null
+        }
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F001",
+      "category": "가족/친척/명절",
+      "situation_title": "결혼 질문",
+      "rude_phrase_examples": [
+        "결혼은 언제 하니?",
+        "나이 더 먹기 전에 해야지."
+      ],
+      "keywords": [
+        "결혼",
+        "명절",
+        "친척"
+      ],
+      "rude_type": "사생활 캐묻기",
+      "relationship_context": "친척/부모 지인",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "F001-R1",
+          "tone": "정중하게",
+          "text": "그건 아직 생각 중이라, 오늘은 패스할게요.",
+          "risk_level": "낮음",
+          "use_when": "명절 자리에서 결혼 질문이 반복될 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F001-R2",
+          "tone": "차갑게",
+          "text": "결혼 얘기는 명절 단골 메뉴인데, 저는 그거 안 시켜요.",
+          "risk_level": "중간",
+          "use_when": "명절 자리에서 결혼 질문이 반복될 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F001-R3",
+          "tone": "선 긋기",
+          "text": "결혼 얘기는 이제 그만요. 때 되면 제가 먼저 말할게요.",
+          "risk_level": "중간",
+          "use_when": "명절 자리에서 결혼 질문이 반복될 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F002",
+      "category": "가족/친척/명절",
+      "situation_title": "출산 압박",
+      "rude_phrase_examples": [
+        "애는 언제 낳을 거야?",
+        "둘째는 빨리 가져야지."
+      ],
+      "keywords": [
+        "출산",
+        "아이",
+        "시댁"
+      ],
+      "rude_type": "신체/가족계획 간섭",
+      "relationship_context": "친척/시댁/가족",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "감사 버퍼 + 화제 전환",
+          "principle_short": "감사 인사 후 화제 돌리기",
+          "principle_display": "반박하거나 해명하지 않고, 짧은 감사 인사로 충격을 흡수한 뒤 대화 주제를 자연스럽게 돌립니다.",
+          "principle_reason": "감정적으로 반박하면 대화가 길어지고 싸움으로 흐르기 쉽습니다. 짧은 감사 인사는 상대 체면을 지켜주면서도 더 추궁할 명분을 주지 않습니다."
+        }
+      ],
+      "risk_level": "높음",
+      "delivery_note": "표정은 부드럽게, 목소리는 낮게. 웃으면서 말하면 더 자연스러움. 상대가 술에 취했거나 화난 상태라면 대답 대신 자리를 옮길 것.",
+      "replies": [
+        {
+          "reply_id": "F002-R1",
+          "tone": "정중하게",
+          "text": "네, 신경 써주셔서 감사해요. 그건 저희가 알아서 천천히 정할게요.",
+          "risk_level": "낮음",
+          "use_when": "출산·임신 계획을 캐묻거나 압박할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감사 버퍼 + 화제 전환",
+          "principle_label": "감사 버퍼 + 화제 전환",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "F002-R2",
+          "tone": "차갑게",
+          "text": "출산 계획은 사생활이라 답 안 할게요.",
+          "risk_level": "중간",
+          "use_when": "출산·임신 계획을 캐묻거나 압박할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "F002-R3",
+          "tone": "선 긋기",
+          "text": "애 얘기 부담스러워요. 그만해 주세요.",
+          "risk_level": "중간",
+          "use_when": "출산·임신 계획을 캐묻거나 압박할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F003",
+      "category": "가족/친척/명절",
+      "situation_title": "연봉 질문",
+      "rude_phrase_examples": [
+        "요즘 돈 얼마나 버니?",
+        "월급은 올랐어?"
+      ],
+      "keywords": [
+        "연봉",
+        "월급",
+        "돈"
+      ],
+      "rude_type": "재정 사생활 침해",
+      "relationship_context": "친척/지인",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "F003-R1",
+          "tone": "정중하게",
+          "text": "그건 좀 개인적인 거라 자세히는 말 못 하겠고, 그냥 잘 지내요.",
+          "risk_level": "낮음",
+          "use_when": "친척이나 지인이 수입을 구체적으로 물을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F003-R2",
+          "tone": "차갑게",
+          "text": "수입 얘기는 공개 안 할게요.",
+          "risk_level": "중간",
+          "use_when": "친척이나 지인이 수입을 구체적으로 물을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F003-R3",
+          "tone": "선 긋기",
+          "text": "돈 얘기는 패스할게요. 그냥 먹고 살만해요.",
+          "risk_level": "중간",
+          "use_when": "친척이나 지인이 수입을 구체적으로 물을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F004",
+      "category": "가족/친척/명절",
+      "situation_title": "집 구입 여부 질문",
+      "rude_phrase_examples": [
+        "집은 샀어?",
+        "전세야 월세야?"
+      ],
+      "keywords": [
+        "집",
+        "전세",
+        "월세",
+        "주거"
+      ],
+      "rude_type": "주거 사생활 침해",
+      "relationship_context": "친척/가족 지인",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "주제 전환",
+          "principle_short": "대화 방향 바꾸기",
+          "principle_display": "불필요한 사생활·평가 대화를 이어가지 않고 다른 주제로 넘깁니다.",
+          "principle_reason": "관계를 크게 해치지 않으면서 민감한 대화를 닫을 때 유용합니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "F004-R1",
+          "tone": "정중하게",
+          "text": "살 곳은 잘 정해서 지내요. 그건 그렇고 요즘 어떻게 지내셨어요?",
+          "risk_level": "낮음",
+          "use_when": "집·자산·주거 형태 질문이 부담스러울 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "주제 전환",
+          "principle_label": "주제 전환",
+          "principle_short": "대화 방향 바꾸기",
+          "principle_display": "불필요한 사생활·평가 대화를 이어가지 않고 다른 주제로 넘깁니다.",
+          "principle_reason": "관계를 크게 해치지 않으면서 민감한 대화를 닫을 때 유용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F004-R2",
+          "tone": "차갑게",
+          "text": "주거 형태는 개인적인 거라 말 안 할게요.",
+          "risk_level": "중간",
+          "use_when": "집·자산·주거 형태 질문이 부담스러울 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "주제 전환",
+          "principle_label": "주제 전환",
+          "principle_short": "대화 방향 바꾸기",
+          "principle_display": "불필요한 사생활·평가 대화를 이어가지 않고 다른 주제로 넘깁니다.",
+          "principle_reason": "관계를 크게 해치지 않으면서 민감한 대화를 닫을 때 유용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F004-R3",
+          "tone": "선 긋기",
+          "text": "집 얘기는 여기서 안 할게요. 다른 얘기해요.",
+          "risk_level": "중간",
+          "use_when": "집·자산·주거 형태 질문이 부담스러울 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "주제 전환",
+          "principle_label": "주제 전환",
+          "principle_short": "대화 방향 바꾸기",
+          "principle_display": "불필요한 사생활·평가 대화를 이어가지 않고 다른 주제로 넘깁니다.",
+          "principle_reason": "관계를 크게 해치지 않으면서 민감한 대화를 닫을 때 유용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F005",
+      "category": "가족/친척/명절",
+      "situation_title": "살쪘네/말랐네",
+      "rude_phrase_examples": [
+        "살쪘네.",
+        "너무 말랐다, 보기 안 좋다."
+      ],
+      "keywords": [
+        "살",
+        "외모",
+        "체형"
+      ],
+      "rude_type": "외모 평가",
+      "relationship_context": "친척/가족",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "F005-R1",
+          "tone": "정중하게",
+          "text": "몸 얘기는 좀 그래서, 다른 얘기할까요?",
+          "risk_level": "낮음",
+          "use_when": "가족 자리에서 체형 평가를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F005-R2",
+          "tone": "차갑게",
+          "text": "제 몸 얘기는 안 하셔도 돼요.",
+          "risk_level": "중간",
+          "use_when": "가족 자리에서 체형 평가를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F005-R3",
+          "tone": "선 긋기",
+          "text": "그거 걱정도 조언도 아니고 그냥 지적이잖아요. 그 얘기는 여기서 멈춰주세요.",
+          "risk_level": "중간",
+          "use_when": "가족 자리에서 체형 평가를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F006",
+      "category": "가족/친척/명절",
+      "situation_title": "형제·사촌 비교",
+      "rude_phrase_examples": [
+        "누구는 벌써 자리 잡았는데 너는?",
+        "네 사촌은 집도 샀더라."
+      ],
+      "keywords": [
+        "비교",
+        "사촌",
+        "형제"
+      ],
+      "rude_type": "비교/열등감 유발",
+      "relationship_context": "친척/부모",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "F006-R1",
+          "tone": "정중하게",
+          "text": "각자 사는 속도가 다르니까, 비교 말고 그냥 제 상황 봐 주세요.",
+          "risk_level": "낮음",
+          "use_when": "가족·친척과 반복 비교당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F006-R2",
+          "tone": "차갑게",
+          "text": "비교는 저한테 별 도움 안 돼요.",
+          "risk_level": "중간",
+          "use_when": "가족·친척과 반복 비교당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F006-R3",
+          "tone": "선 긋기",
+          "text": "비교 좀 그만하셔도 돼요. 저는 제 페이스대로 가고 있어요.",
+          "risk_level": "중간",
+          "use_when": "가족·친척과 반복 비교당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F007",
+      "category": "가족/친척/명절",
+      "situation_title": "나이 먹었으면 안정돼야지",
+      "rude_phrase_examples": [
+        "나이 먹었으면 안정돼야지.",
+        "언제까지 그렇게 살래?"
+      ],
+      "keywords": [
+        "나이",
+        "안정",
+        "인생평가"
+      ],
+      "rude_type": "인생 방식 평가",
+      "relationship_context": "친척/부모 세대",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "F007-R1",
+          "tone": "정중하게",
+          "text": "걱정하시는 건 알겠는데, 저는 제 속도대로 가고 있어요.",
+          "risk_level": "낮음",
+          "use_when": "인생 경로나 직업 선택을 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F007-R2",
+          "tone": "차갑게",
+          "text": "제 삶은 제가 정할게요.",
+          "risk_level": "중간",
+          "use_when": "인생 경로나 직업 선택을 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F007-R3",
+          "tone": "선 긋기",
+          "text": "제 선택 평가하는 말은 부담스러워요. 조언 필요할 때 먼저 여쭐게요.",
+          "risk_level": "중간",
+          "use_when": "인생 경로나 직업 선택을 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "F008",
+      "category": "가족/친척/명절",
+      "situation_title": "사생활 캐묻기",
+      "rude_phrase_examples": [
+        "요즘 만나는 사람 있어?",
+        "왜 헤어졌어?"
+      ],
+      "keywords": [
+        "연애",
+        "사생활",
+        "캐묻기"
+      ],
+      "rude_type": "연애 사생활 침해",
+      "relationship_context": "친척/가족",
+      "power_gap": "중간",
+      "recommended_principles": [
+        {
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "F008-R1",
+          "tone": "정중하게",
+          "text": "그건 개인적인 부분이라 자세히는 말 안 할게요.",
+          "risk_level": "낮음",
+          "use_when": "연애·이별 이야기를 계속 물을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "반복 차단",
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F008-R2",
+          "tone": "차갑게",
+          "text": "연애 얘기는 답 안 할게요.",
+          "risk_level": "중간",
+          "use_when": "연애·이별 이야기를 계속 물을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "반복 차단",
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "F008-R3",
+          "tone": "선 긋기",
+          "text": "아까도 말했듯이 그 얘기는 안 할게요. 다른 얘기해요.",
+          "risk_level": "중간",
+          "use_when": "연애·이별 이야기를 계속 물을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "반복 차단",
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P001",
+      "category": "외모/사생활",
+      "situation_title": "늙어 보인다는 말",
+      "rude_phrase_examples": [
+        "요즘 늙어 보인다.",
+        "피곤해 보여, 나이 들어 보이네."
+      ],
+      "keywords": [
+        "늙어보임",
+        "나이",
+        "외모평가"
+      ],
+      "rude_type": "외모/나이 평가",
+      "relationship_context": "지인/동료",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "P001-R1",
+          "tone": "정중하게",
+          "text": "그 얘기는 좀 민망해서, 오늘은 안 할게요.",
+          "risk_level": "낮음",
+          "use_when": "동료나 지인이 외모와 나이를 평가할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P001-R2",
+          "tone": "차갑게",
+          "text": "외모 평가는 사양할게요.",
+          "risk_level": "중간",
+          "use_when": "동료나 지인이 외모와 나이를 평가할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P001-R3",
+          "tone": "선 긋기",
+          "text": "그거 걱정이 아니라 그냥 외모 평가잖아요. 안 했으면 좋겠어요.",
+          "risk_level": "중간",
+          "use_when": "동료나 지인이 외모와 나이를 평가할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P002",
+      "category": "외모/사생활",
+      "situation_title": "피부·화장 지적",
+      "rude_phrase_examples": [
+        "피부 왜 그래?",
+        "화장 좀 해야겠다."
+      ],
+      "keywords": [
+        "피부",
+        "화장",
+        "꾸밈"
+      ],
+      "rude_type": "외모 간섭",
+      "relationship_context": "지인/동료/친척",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "P002-R1",
+          "tone": "정중하게",
+          "text": "그 얘기는 좀 불편해요. 다른 얘기하면 좋겠어요.",
+          "risk_level": "낮음",
+          "use_when": "피부·화장·꾸밈을 지적받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P002-R2",
+          "tone": "차갑게",
+          "text": "피부나 화장은 평가하지 말아 주세요.",
+          "risk_level": "중간",
+          "use_when": "피부·화장·꾸밈을 지적받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P002-R3",
+          "tone": "선 긋기",
+          "text": "그거 조언 아니고 지적이잖아요. 안 물어본 얘기예요.",
+          "risk_level": "중간",
+          "use_when": "피부·화장·꾸밈을 지적받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P003",
+      "category": "외모/사생활",
+      "situation_title": "옷차림 평가",
+      "rude_phrase_examples": [
+        "옷이 왜 그래?",
+        "그 나이에 그런 옷은 좀."
+      ],
+      "keywords": [
+        "옷차림",
+        "패션",
+        "나이"
+      ],
+      "rude_type": "취향 평가/나이 압박",
+      "relationship_context": "지인/가족",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "P003-R1",
+          "tone": "정중하게",
+          "text": "그래요? 저는 편해서 입은 건데요.",
+          "risk_level": "낮음",
+          "use_when": "옷차림을 공개적으로 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P003-R2",
+          "tone": "차갑게",
+          "text": "제 옷은 제가 알아서 입을게요.",
+          "risk_level": "중간",
+          "use_when": "옷차림을 공개적으로 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P003-R3",
+          "tone": "선 긋기",
+          "text": "옷 얘기는 그만해 주세요. 평가받고 싶지 않아요.",
+          "risk_level": "중간",
+          "use_when": "옷차림을 공개적으로 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P004",
+      "category": "외모/사생활",
+      "situation_title": "연애 압박",
+      "rude_phrase_examples": [
+        "왜 아직 연애 안 해?",
+        "눈이 너무 높은 거 아냐?"
+      ],
+      "keywords": [
+        "연애",
+        "눈높다",
+        "사생활"
+      ],
+      "rude_type": "사생활 평가",
+      "relationship_context": "지인/친척",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "P004-R1",
+          "tone": "정중하게",
+          "text": "연애는 그냥 비밀이에요, 하하.",
+          "risk_level": "낮음",
+          "use_when": "연애 여부나 취향을 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P004-R2",
+          "tone": "차갑게",
+          "text": "연애 얘기는 패스할게요.",
+          "risk_level": "중간",
+          "use_when": "연애 여부나 취향을 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P004-R3",
+          "tone": "선 긋기",
+          "text": "제 연애사는 제 거예요. 평가는 됐어요.",
+          "risk_level": "중간",
+          "use_when": "연애 여부나 취향을 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P005",
+      "category": "외모/사생활",
+      "situation_title": "직업 무시",
+      "rude_phrase_examples": [
+        "그 일 해서 먹고살 수 있어?",
+        "아직도 그 일 해?"
+      ],
+      "keywords": [
+        "직업",
+        "무시",
+        "먹고살수있어"
+      ],
+      "rude_type": "직업 가치 비하",
+      "relationship_context": "지인/친척",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "P005-R1",
+          "tone": "정중하게",
+          "text": "걱정해주시는 거면 감사한데, 저는 이 일 좋아서 하는 거예요.",
+          "risk_level": "낮음",
+          "use_when": "직업 선택이나 수입 가능성을 무시당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P005-R2",
+          "tone": "차갑게",
+          "text": "그거 그냥 제 직업 무시하는 말이잖아요.",
+          "risk_level": "중간",
+          "use_when": "직업 선택이나 수입 가능성을 무시당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P005-R3",
+          "tone": "선 긋기",
+          "text": "제가 벌어먹고 사는 방식인데, 그건 제가 정하는 거예요.",
+          "risk_level": "중간",
+          "use_when": "직업 선택이나 수입 가능성을 무시당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P006",
+      "category": "외모/사생활",
+      "situation_title": "주거 형태 무시",
+      "rude_phrase_examples": [
+        "아직 월세 살아?",
+        "그 나이에 부모님 집?"
+      ],
+      "keywords": [
+        "월세",
+        "부모님집",
+        "주거무시"
+      ],
+      "rude_type": "생활 방식 비하",
+      "relationship_context": "지인/친척",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "P006-R1",
+          "tone": "정중하게",
+          "text": "사는 얘기는 비밀이에요. 잘 지내고 있어요.",
+          "risk_level": "낮음",
+          "use_when": "주거 형태를 계급처럼 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P006-R2",
+          "tone": "차갑게",
+          "text": "어디 사는지가 평가 기준은 아니잖아요.",
+          "risk_level": "중간",
+          "use_when": "주거 형태를 계급처럼 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P006-R3",
+          "tone": "선 긋기",
+          "text": "그거 그냥 사는 거 가지고 줄 세우는 거잖아요. 안 했으면 좋겠어요.",
+          "risk_level": "중간",
+          "use_when": "주거 형태를 계급처럼 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "답변 거부",
+          "principle_label": "답변 거부",
+          "principle_short": "사생활 질문 닫기",
+          "principle_display": "개인적인 질문에 자세히 설명하지 않고 답변하지 않겠다고 말합니다.",
+          "principle_reason": "설명을 길게 할수록 상대가 더 캐물을 수 있어, 짧은 거절이 안전합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P007",
+      "category": "외모/사생활",
+      "situation_title": "그 나이에 아직도",
+      "rude_phrase_examples": [
+        "그 나이에 아직도 그걸 해?",
+        "이제 그만할 때도 됐지."
+      ],
+      "keywords": [
+        "그나이에",
+        "나이압박",
+        "아직도"
+      ],
+      "rude_type": "나이 기준 압박",
+      "relationship_context": "지인/가족",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "P007-R1",
+          "tone": "정중하게",
+          "text": "저한테는 아직 중요한 일이라, 제 속도대로 하고 있어요.",
+          "risk_level": "낮음",
+          "use_when": "나이를 근거로 취미·일·도전을 무시당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P007-R2",
+          "tone": "차갑게",
+          "text": "나이 기준으로 제 선택 판단하지 말아 주세요.",
+          "risk_level": "중간",
+          "use_when": "나이를 근거로 취미·일·도전을 무시당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "P007-R3",
+          "tone": "선 긋기",
+          "text": "그 말 제 선택 깎아내리는 거로 들려요. 나이 얘기는 빼주세요.",
+          "risk_level": "중간",
+          "use_when": "나이를 근거로 취미·일·도전을 무시당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "P008",
+      "category": "외모/사생활",
+      "situation_title": "몸매 농담",
+      "rude_phrase_examples": [
+        "요즘 관리 좀 해야겠다.",
+        "살 빼면 예쁘겠다."
+      ],
+      "keywords": [
+        "몸매",
+        "관리",
+        "살빼면"
+      ],
+      "rude_type": "외모 성적/체형 평가",
+      "relationship_context": "지인/동료",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "delivery_note": "비꼬거나 화내지 말고, 감정을 뺀 낮은 목소리로 단호하게 말해야 효과가 극대화됨.",
+      "replies": [
+        {
+          "reply_id": "P008-R1",
+          "tone": "정중하게",
+          "text": "외모 이야기는 저는 편하지 않습니다.",
+          "risk_level": "낮음",
+          "use_when": "체형을 농담처럼 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "P008-R2",
+          "tone": "차갑게",
+          "text": "제 몸에 대한 말은 삼가 주세요.",
+          "risk_level": "중간",
+          "use_when": "체형을 농담처럼 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "P008-R3",
+          "tone": "선 긋기",
+          "text": "그거 농담 아니고 그냥 몸 평가잖아요. 안 받을게요.",
+          "risk_level": "중간",
+          "use_when": "체형을 농담처럼 평가받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "R001",
+      "category": "친구/지인",
+      "situation_title": "농담인데 왜 예민해",
+      "rude_phrase_examples": [
+        "농담인데 왜 이렇게 예민해?",
+        "장난도 못 받아?"
+      ],
+      "keywords": [
+        "농담",
+        "예민",
+        "장난"
+      ],
+      "rude_type": "농담 프레임/감정 무시",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "delivery_note": "최대한 감정을 싣지 않고 건조하게 말하는 것이 포인트. 무표정한 얼굴로 상대의 눈을 몇 초간 응시하여 불편한 침묵을 만드는 것도 효과적.",
+      "replies": [
+        {
+          "reply_id": "R001-R1",
+          "tone": "정중하게",
+          "text": "방금 하신 말씀은 무슨 뜻인지 모르겠으니 설명해 주시겠어요?",
+          "risk_level": "낮음",
+          "use_when": "무례한 말을 장난으로 포장할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": "농담인 거 아는데, 나 그 말 진짜 별로였어.",
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "R001-R2",
+          "tone": "차갑게",
+          "text": "그거 농담 아니고 그냥 무례한 거예요.",
+          "risk_level": "중간",
+          "use_when": "무례한 말을 장난으로 포장할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": "그거 농담 아니고 그냥 무례한 거야.",
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "R001-R3",
+          "tone": "선 긋기",
+          "text": "제3자가 들으면 오해하겠는데요.",
+          "risk_level": "중간",
+          "use_when": "무례한 말을 장난으로 포장할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": "농담으로 포장하지 마. 내가 예민한 게 아니라 네가 무례한 거야.",
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R002",
+      "category": "친구/지인",
+      "situation_title": "너는 원래 못 하잖아",
+      "rude_phrase_examples": [
+        "너는 원래 그런 거 못 하잖아.",
+        "너한테는 좀 어렵지."
+      ],
+      "keywords": [
+        "원래못해",
+        "능력비하",
+        "친구"
+      ],
+      "rude_type": "능력 깎아내리기",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "R002-R1",
+          "tone": "정중하게",
+          "text": "그렇게 말씀하시면 좀 단정짓는 느낌이에요.",
+          "risk_level": "낮음",
+          "use_when": "친구가 습관처럼 능력을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "그렇게 말하면 좀 단정짓는 느낌인데."
+        },
+        {
+          "reply_id": "R002-R2",
+          "tone": "차갑게",
+          "text": "제가 못 한다고 어떻게 아세요.",
+          "risk_level": "중간",
+          "use_when": "친구가 습관처럼 능력을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "내가 못 한다고 네가 어떻게 알아."
+        },
+        {
+          "reply_id": "R002-R3",
+          "tone": "선 긋기",
+          "text": "그렇게 미리 선 긋지 말아 주세요, 듣기 싫어요.",
+          "risk_level": "중간",
+          "use_when": "친구가 습관처럼 능력을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "그렇게 미리 선 긋지 마, 듣기 싫어."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R003",
+      "category": "친구/지인",
+      "situation_title": "너답다라는 비꼼",
+      "rude_phrase_examples": [
+        "역시 너답다.",
+        "그러니까 너지."
+      ],
+      "keywords": [
+        "너답다",
+        "비꼼",
+        "패시브어그레시브"
+      ],
+      "rude_type": "비꼼/패시브어그레시브",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "replies": [
+        {
+          "reply_id": "R003-R1",
+          "tone": "정중하게",
+          "text": "그 말이 칭찬인지 지적인지 잘 모르겠어요. 어떤 뜻으로 하신 거예요?",
+          "risk_level": "낮음",
+          "use_when": "칭찬처럼 포장된 비꼼이 느껴질 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "그 말 칭찬인지 지적인지 잘 모르겠는데, 무슨 뜻으로 한 거야?"
+        },
+        {
+          "reply_id": "R003-R2",
+          "tone": "차갑게",
+          "text": "비꼬는 거면 듣고 싶지 않아요.",
+          "risk_level": "중간",
+          "use_when": "칭찬처럼 포장된 비꼼이 느껴질 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "비꼬는 거면 듣고 싶지 않아."
+        },
+        {
+          "reply_id": "R003-R3",
+          "tone": "선 긋기",
+          "text": "돌려 말하지 말고 할 말 있으면 직접 해 주세요.",
+          "risk_level": "중간",
+          "use_when": "칭찬처럼 포장된 비꼼이 느껴질 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "돌려 말하지 말고 할 말 있으면 직접 해."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R004",
+      "category": "친구/지인",
+      "situation_title": "걱정인 척 비하",
+      "rude_phrase_examples": [
+        "걱정돼서 하는 말인데 너는 안 될 것 같아.",
+        "현실적으로 너한텐 무리야."
+      ],
+      "keywords": [
+        "걱정",
+        "무리야",
+        "비하"
+      ],
+      "rude_type": "걱정 프레임 비하",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "R004-R1",
+          "tone": "정중하게",
+          "text": "걱정은 고마운데, 안 될 거라고 단정짓진 말아주세요.",
+          "risk_level": "낮음",
+          "use_when": "걱정을 명분으로 도전을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "걱정해주는 건 고마운데, 그냥 안 될 거라고 단정짓진 말아줘."
+        },
+        {
+          "reply_id": "R004-R2",
+          "tone": "차갑게",
+          "text": "그거 걱정 아니고 그냥 무시잖아요.",
+          "risk_level": "중간",
+          "use_when": "걱정을 명분으로 도전을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "그거 걱정 아니고 그냥 무시잖아."
+        },
+        {
+          "reply_id": "R004-R3",
+          "tone": "선 긋기",
+          "text": "제 가능성 낮춰 말하는 조언은 안 들을게요.",
+          "risk_level": "중간",
+          "use_when": "걱정을 명분으로 도전을 깎아내릴 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "내 가능성 낮춰 말하는 조언은 안 들을래."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R005",
+      "category": "친구/지인",
+      "situation_title": "성취 깎아내리기",
+      "rude_phrase_examples": [
+        "그 정도는 누구나 해.",
+        "운이 좋았네."
+      ],
+      "keywords": [
+        "성과",
+        "깎아내리기",
+        "운좋았네"
+      ],
+      "rude_type": "성과 폄하",
+      "relationship_context": "친구/지인/동료",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "R005-R1",
+          "tone": "정중하게",
+          "text": "그렇게 들릴 수도 있지만, 저한텐 노력한 결과라 의미가 커요.",
+          "risk_level": "낮음",
+          "use_when": "성과를 공유했는데 폄하당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "그렇게 들릴 수도 있는데, 나한텐 노력한 결과라 의미가 커."
+        },
+        {
+          "reply_id": "R005-R2",
+          "tone": "차갑게",
+          "text": "제 성과 가볍게 말하지 말아 주세요.",
+          "risk_level": "중간",
+          "use_when": "성과를 공유했는데 폄하당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "내 성과 가볍게 말하지 마."
+        },
+        {
+          "reply_id": "R005-R3",
+          "tone": "선 긋기",
+          "text": "제 노력 깎아내리는 말은 안 받을게요.",
+          "risk_level": "중간",
+          "use_when": "성과를 공유했는데 폄하당할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "내 노력 깎아내리는 말, 그거 안 받아줄게."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R006",
+      "category": "친구/지인",
+      "situation_title": "패시브어그레시브 발언",
+      "rude_phrase_examples": [
+        "난 그냥 말 안 할게.",
+        "네가 그렇다면 그런 거겠지."
+      ],
+      "keywords": [
+        "패시브어그레시브",
+        "비꼼",
+        "돌려말하기"
+      ],
+      "rude_type": "간접 공격",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "R006-R1",
+          "tone": "정중하게",
+          "text": "속뜻 추측하게 하지 말고, 할 말 있으면 직접 해 주세요.",
+          "risk_level": "낮음",
+          "use_when": "상대가 불만을 돌려 말하며 압박할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "속뜻 추측하게 만들지 말고, 할 말 있으면 직접 해줘."
+        },
+        {
+          "reply_id": "R006-R2",
+          "tone": "차갑게",
+          "text": "돌려 말하면 대화가 어려워요. 직접 말씀해 주세요.",
+          "risk_level": "중간",
+          "use_when": "상대가 불만을 돌려 말하며 압박할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "돌려 말하면 대화가 안 돼. 직접 말해."
+        },
+        {
+          "reply_id": "R006-R3",
+          "tone": "선 긋기",
+          "text": "비꼬는 식으로 말씀하시면 저도 더는 안 받을게요.",
+          "risk_level": "중간",
+          "use_when": "상대가 불만을 돌려 말하며 압박할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "의미 묻기",
+          "principle_label": "의미 묻기",
+          "principle_short": "말뜻 되묻기",
+          "principle_display": "바로 반격하지 않고, 그 말이 어떤 의미인지 되물어 발언의 무게를 상대에게 돌립니다.",
+          "principle_reason": "은근한 비하나 농담 프레임을 깨고, 상대가 스스로 발언을 점검하게 만듭니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "비꼬는 식으로 말하면 나도 더는 안 받아줄 거야."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R007",
+      "category": "친구/지인",
+      "situation_title": "약속 취소 비난",
+      "rude_phrase_examples": [
+        "네가 원래 그렇지.",
+        "너 때문에 다 망했어."
+      ],
+      "keywords": [
+        "약속취소",
+        "비난",
+        "책임"
+      ],
+      "rude_type": "책임 과장/비난",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "R007-R1",
+          "tone": "정중하게",
+          "text": "불편하게 한 건 미안한데, 저 전체를 그런 식으로 말하진 말아주세요.",
+          "risk_level": "낮음",
+          "use_when": "실수나 일정 변경을 인격 비난으로 몰아갈 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감정 반격 회피",
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "불편하게 한 건 미안한데, 나 전체를 그런 식으로 말하진 말아줘."
+        },
+        {
+          "reply_id": "R007-R2",
+          "tone": "차갑게",
+          "text": "그건 그거고, 사람 인성까지 걸고넘어지진 말아주세요.",
+          "risk_level": "중간",
+          "use_when": "실수나 일정 변경을 인격 비난으로 몰아갈 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감정 반격 회피",
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "그건 그거고, 사람 인성 걸고넘어지진 마."
+        },
+        {
+          "reply_id": "R007-R3",
+          "tone": "선 긋기",
+          "text": "문제는 얘기할게요. 근데 저 몰아붙이는 건 멈춰주세요.",
+          "risk_level": "중간",
+          "use_when": "실수나 일정 변경을 인격 비난으로 몰아갈 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "감정 반격 회피",
+          "principle_label": "감정 반격 회피",
+          "principle_short": "차분하게 말하기",
+          "principle_display": "상대를 공격하지 않고, 내가 불편한 지점과 필요한 기준을 차분히 말합니다.",
+          "principle_reason": "상대가 더 공격적으로 나올 가능성을 줄이고 대화의 주도권을 지키기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "문제는 얘기할게. 근데 나 몰아붙이는 건 멈춰줘."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R008",
+      "category": "친구/지인",
+      "situation_title": "내 선택을 계속 참견",
+      "rude_phrase_examples": [
+        "그거 하지 마.",
+        "내 말 들어야 후회 안 해."
+      ],
+      "keywords": [
+        "참견",
+        "선택",
+        "통제"
+      ],
+      "rude_type": "통제/간섭",
+      "relationship_context": "친구/지인",
+      "power_gap": "동등",
+      "recommended_principles": [
+        {
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "R008-R1",
+          "tone": "정중하게",
+          "text": "조언은 고마운데 결정은 제가 할게요.",
+          "risk_level": "낮음",
+          "use_when": "친구가 조언을 넘어 결정을 통제하려 할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "반복 차단",
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "조언은 고마운데 결정은 내가 할게."
+        },
+        {
+          "reply_id": "R008-R2",
+          "tone": "차갑게",
+          "text": "같은 얘기 계속하시는 거, 이제 그만하셔도 돼요.",
+          "risk_level": "중간",
+          "use_when": "친구가 조언을 넘어 결정을 통제하려 할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "반복 차단",
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "같은 얘기 계속하는 거, 이제 그만해도 돼."
+        },
+        {
+          "reply_id": "R008-R3",
+          "tone": "선 긋기",
+          "text": "제 선택에 자꾸 끼어드시는 거, 그만해주세요.",
+          "risk_level": "중간",
+          "use_when": "친구가 조언을 넘어 결정을 통제하려 할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "반복 차단",
+          "principle_label": "반복 차단",
+          "principle_short": "같은 질문 멈추기",
+          "principle_display": "이미 답했다는 점을 알리고 같은 질문을 반복하지 않도록 요청합니다.",
+          "principle_reason": "반복 질문에 매번 반응하면 상대의 캐묻기가 강화될 수 있습니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": "내 선택에 자꾸 끼어드는 거, 그만해줘."
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": true
+    },
+    {
+      "id": "R009",
+      "category": "친구/지인",
+      "situation_title": "칭찬을 가장한 외모 비하",
+      "rude_phrase_examples": [
+        "얼굴이 참 이타적이네요.",
+        "선해 보이게 생겼다 (못생겼다는 뜻으로)"
+      ],
+      "keywords": [
+        "돌려까기",
+        "칭찬가장",
+        "외모비하"
+      ],
+      "rude_type": "반어적 비하",
+      "relationship_context": "지인/친구",
+      "power_gap": "낮음",
+      "recommended_principles": [
+        {
+          "principle_label": "되묻기를 통한 객관화",
+          "principle_short": "천진난만하게 되묻기",
+          "principle_display": "상황을 이해 못한 것처럼 순진하게 되물어, 상대가 자기 말을 스스로 점검하게 만듭니다.",
+          "principle_reason": "상대가 한 말을 직접 풀어서 다시 말하게 하면, 그 무례함이 본인 입에서 드러나 스스로 머쓱해집니다."
+        }
+      ],
+      "risk_level": "낮음",
+      "delivery_note": "정색하지 말고 진짜 궁금한 것처럼 천진난만한 톤으로 물을 것. 그래야 상대가 머쓱해하며 스스로 표현을 점검하게 됨.",
+      "replies": [
+        {
+          "reply_id": "R009-R1",
+          "tone": "정중하게",
+          "text": "아, 제 얼굴이 못생겼다는 뜻이죠?",
+          "risk_level": "낮음",
+          "use_when": "칭찬처럼 포장된 외모 비하를 들었을 때",
+          "avoid_when": "상대가 이미 크게 흥분했거나 술에 취한 상황",
+          "principle": "되묻기를 통한 객관화",
+          "principle_label": "되묻기를 통한 객관화",
+          "principle_short": "천진난만하게 되묻기",
+          "principle_display": "상황을 이해 못한 것처럼 순진하게 되물어, 상대가 자기 말을 스스로 점검하게 만듭니다.",
+          "principle_reason": "상대가 한 말을 직접 풀어서 다시 말하게 하면, 그 무례함이 본인 입에서 드러나 스스로 머쓱해집니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)",
+          "text_banmal": null
+        }
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C001",
+      "category": "고객/진상",
+      "situation_title": "반말하는 손님",
+      "rude_phrase_examples": [
+        "야, 이거 해줘.",
+        "너 말고 사장 불러."
+      ],
+      "keywords": [
+        "반말",
+        "하대",
+        "손님"
+      ],
+      "rude_type": "하대/반말",
+      "relationship_context": "고객",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "C001-R1",
+          "tone": "정중하게",
+          "text": "도와드릴게요. 다만 존댓말로 말씀해 주시면 더 편하게 안내드려요.",
+          "risk_level": "낮음",
+          "use_when": "고객이 반말이나 하대하는 말투를 사용할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C001-R2",
+          "tone": "차갑게",
+          "text": "반말로는 응대 못 해드려요. 존댓말 부탁드릴게요.",
+          "risk_level": "중간",
+          "use_when": "고객이 반말이나 하대하는 말투를 사용할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C001-R3",
+          "tone": "선 긋기",
+          "text": "이런 말투면 저도 응대 못 드려요.",
+          "risk_level": "중간",
+          "use_when": "고객이 반말이나 하대하는 말투를 사용할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C002",
+      "category": "고객/진상",
+      "situation_title": "무리한 요구",
+      "rude_phrase_examples": [
+        "원래 안 되는 거 알아도 해줘.",
+        "다른 데는 해주던데?"
+      ],
+      "keywords": [
+        "무리한요구",
+        "규정",
+        "서비스범위"
+      ],
+      "rude_type": "규정 외 요구",
+      "relationship_context": "고객/클라이언트",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "C002-R1",
+          "tone": "정중하게",
+          "text": "확인은 해볼게요. 근데 지금 안내 가능한 건 여기까지예요.",
+          "risk_level": "낮음",
+          "use_when": "정책이나 계약 범위를 넘는 요구를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C002-R2",
+          "tone": "차갑게",
+          "text": "그건 규정 밖이라 어려워요.",
+          "risk_level": "중간",
+          "use_when": "정책이나 계약 범위를 넘는 요구를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C002-R3",
+          "tone": "선 긋기",
+          "text": "되는 거랑 안 되는 거 분명히 말씀드릴게요. 이건 안 돼요.",
+          "risk_level": "중간",
+          "use_when": "정책이나 계약 범위를 넘는 요구를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C003",
+      "category": "고객/진상",
+      "situation_title": "가격 깎기",
+      "rude_phrase_examples": [
+        "이 정도는 깎아줘.",
+        "비싸니까 서비스로 해줘."
+      ],
+      "keywords": [
+        "가격깎기",
+        "서비스",
+        "할인"
+      ],
+      "rude_type": "노동 가치 절하",
+      "relationship_context": "고객/클라이언트",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "C003-R1",
+          "tone": "정중하게",
+          "text": "가격은 안내드린 대로예요.",
+          "risk_level": "낮음",
+          "use_when": "반복적으로 할인을 요구하거나 무료 제공을 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C003-R2",
+          "tone": "차갑게",
+          "text": "가격은 더 못 깎아드려요.",
+          "risk_level": "중간",
+          "use_when": "반복적으로 할인을 요구하거나 무료 제공을 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C003-R3",
+          "tone": "선 긋기",
+          "text": "추가 할인은 어려워요. 범위 줄여서 다시 견적 드릴게요.",
+          "risk_level": "중간",
+          "use_when": "반복적으로 할인을 요구하거나 무료 제공을 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C004",
+      "category": "고객/진상",
+      "situation_title": "리뷰 협박",
+      "rude_phrase_examples": [
+        "안 해주면 리뷰 안 좋게 쓸 거야.",
+        "별점으로 말해줄게."
+      ],
+      "keywords": [
+        "리뷰협박",
+        "별점",
+        "협박"
+      ],
+      "rude_type": "협박/압박",
+      "relationship_context": "고객",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "높음",
+      "replies": [
+        {
+          "reply_id": "C004-R1",
+          "tone": "정중하게",
+          "text": "불편하신 점은 확인할게요. 근데 리뷰 가지고 규정 밖 처리는 안 돼요.",
+          "risk_level": "낮음",
+          "use_when": "리뷰나 별점을 빌미로 규정 밖 요구를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C004-R2",
+          "tone": "차갑게",
+          "text": "리뷰로 압박하시는 건 받기 어려워요.",
+          "risk_level": "중간",
+          "use_when": "리뷰나 별점을 빌미로 규정 밖 요구를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C004-R3",
+          "tone": "선 긋기",
+          "text": "지금 하신 말씀은 캡처해서 남겨둘게요. 가능한 데까지만 도와드릴게요.",
+          "risk_level": "중간",
+          "use_when": "리뷰나 별점을 빌미로 규정 밖 요구를 받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C005",
+      "category": "고객/진상",
+      "situation_title": "무료 노동 요구",
+      "rude_phrase_examples": [
+        "간단한 거니까 그냥 해줘.",
+        "포트폴리오 된다고 생각해."
+      ],
+      "keywords": [
+        "무료노동",
+        "포트폴리오",
+        "간단한거"
+      ],
+      "rude_type": "무상 노동 요구",
+      "relationship_context": "클라이언트/지인 고객",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "delivery_note": "미안해하지 말고 담백하게 말할 것. 기존 견적서나 작업 범위 안내 문서를 시각적으로 보여주는 것이 안전함.",
+      "replies": [
+        {
+          "reply_id": "C005-R1",
+          "tone": "정중하게",
+          "text": "해당 범위는 별도 작업이라 추가 비용이 발생합니다.",
+          "risk_level": "낮음",
+          "use_when": "프리랜서나 창작 노동을 무료로 요구받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "C005-R2",
+          "tone": "차갑게",
+          "text": "무상으로는 안 해드려요.",
+          "risk_level": "중간",
+          "use_when": "프리랜서나 창작 노동을 무료로 요구받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        },
+        {
+          "reply_id": "C005-R3",
+          "tone": "선 긋기",
+          "text": "작업은 무조건 계약으로만 해요.",
+          "risk_level": "중간",
+          "use_when": "프리랜서나 창작 노동을 무료로 요구받을 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "요청 범위 명확화",
+          "principle_label": "요청 범위 명확화",
+          "principle_short": "할 수 있는 범위 정하기",
+          "principle_display": "상대의 요구를 받아들이기 전에 가능한 범위와 기준을 분명히 합니다.",
+          "principle_reason": "무리한 요구가 당연한 일이 되지 않도록 업무·노동·관계의 범위를 정합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "text_banmal": null,
+          "internal_note": "무례상황유형.docx 기반, 2026-06 정리 (화면에 노출 안 함)"
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C006",
+      "category": "고객/진상",
+      "situation_title": "작업물 가치 비하",
+      "rude_phrase_examples": [
+        "이거 하는 데 뭐가 그렇게 비싸?",
+        "대충 금방 하는 거잖아."
+      ],
+      "keywords": [
+        "작업물",
+        "가치비하",
+        "전문성"
+      ],
+      "rude_type": "전문성 비하",
+      "relationship_context": "고객/클라이언트",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "C006-R1",
+          "tone": "정중하게",
+          "text": "이 가격엔 작업 시간이랑 수정, 책임까지 다 들어있어요.",
+          "risk_level": "낮음",
+          "use_when": "작업의 전문성을 낮춰 말할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C006-R2",
+          "tone": "차갑게",
+          "text": "작업 값 깎아 말씀하시는 건 좀 그래요.",
+          "risk_level": "중간",
+          "use_when": "작업의 전문성을 낮춰 말할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C006-R3",
+          "tone": "선 긋기",
+          "text": "제 일 대충 하는 것처럼 말씀하시는 건 안 받을게요. 기준이랑 견적으로 얘기해 주세요.",
+          "risk_level": "중간",
+          "use_when": "작업의 전문성을 낮춰 말할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C007",
+      "category": "고객/진상",
+      "situation_title": "사장 나오라 그래",
+      "rude_phrase_examples": [
+        "사장 나오라 그래.",
+        "너랑 말 안 통해."
+      ],
+      "keywords": [
+        "사장",
+        "클레임",
+        "응대"
+      ],
+      "rude_type": "위협적 요구",
+      "relationship_context": "고객",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "C007-R1",
+          "tone": "정중하게",
+          "text": "책임자 필요하시면 절차대로 연결해드릴게요.",
+          "risk_level": "낮음",
+          "use_when": "고객이 담당자를 무시하고 위협적으로 책임자를 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C007-R2",
+          "tone": "차갑게",
+          "text": "소리 높이시면 응대 어려워요. 내용 먼저 말씀해 주세요.",
+          "risk_level": "중간",
+          "use_when": "고객이 담당자를 무시하고 위협적으로 책임자를 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C007-R3",
+          "tone": "선 긋기",
+          "text": "지금 말씀은 기록해두고 절차대로 전달할게요.",
+          "risk_level": "중간",
+          "use_when": "고객이 담당자를 무시하고 위협적으로 책임자를 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "기록/보고 전환",
+          "principle_label": "기록/보고 전환",
+          "principle_short": "말을 기록으로 남기기",
+          "principle_display": "감정싸움으로 끌려가지 않고, 내용 확인·기록·공식 절차로 전환합니다.",
+          "principle_reason": "반복적 괴롭힘이나 무리한 요구가 있을 때 증거와 절차를 확보하기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    },
+    {
+      "id": "C008",
+      "category": "고객/진상",
+      "situation_title": "계속되는 감정노동 압박",
+      "rude_phrase_examples": [
+        "웃으면서 말해야지.",
+        "서비스직이면 참아야지."
+      ],
+      "keywords": [
+        "감정노동",
+        "서비스직",
+        "웃어"
+      ],
+      "rude_type": "감정노동 강요",
+      "relationship_context": "고객",
+      "power_gap": "높음",
+      "recommended_principles": [
+        {
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다."
+        }
+      ],
+      "risk_level": "중간",
+      "replies": [
+        {
+          "reply_id": "C008-R1",
+          "tone": "정중하게",
+          "text": "친절히 안내드릴게요. 다만 인격적인 말은 삼가주세요.",
+          "risk_level": "낮음",
+          "use_when": "고객이 서비스직이라는 이유로 감정적 모욕을 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C008-R2",
+          "tone": "차갑게",
+          "text": "서비스 받는 거랑 모욕 참는 건 다른 얘기예요.",
+          "risk_level": "중간",
+          "use_when": "고객이 서비스직이라는 이유로 감정적 모욕을 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        },
+        {
+          "reply_id": "C008-R3",
+          "tone": "선 긋기",
+          "text": "응대는 계속할게요. 근데 무례한 말 반복되면 끝낼 수 있어요.",
+          "risk_level": "중간",
+          "use_when": "고객이 서비스직이라는 이유로 감정적 모욕을 요구할 때",
+          "avoid_when": "상대가 술에 취했거나 이미 크게 흥분한 상황",
+          "principle": "경계선 고지",
+          "principle_label": "경계선 고지",
+          "principle_short": "불편한 주제 선 긋기",
+          "principle_display": "해명하거나 웃어넘기지 않고, 이 주제는 불편하다는 선을 짧게 알립니다.",
+          "principle_reason": "상대의 평가·간섭을 대화의 기본값으로 받아들이지 않기 위해 사용합니다.",
+          "caution": "목소리를 낮추고 짧게 말하세요.",
+          "source_basis": "업로드 보고서의 NVC·경계선 설정 원칙 및 실제 사례 유형 기반 재구성",
+          "text_banmal": null
+        }
+      ],
+      "source_notes": [
+        "업로드된 마크다운 보고서 기반",
+        "문장은 원문 복제 없이 앱용으로 재구성",
+        "원문 출처가 자료 번호 중심이라 실제 배포 전 외부 출처 검증 권장"
+      ],
+      "has_banmal_option": false
+    }
+  ],
+  "excluded_expression_types": [
+    "욕설",
+    "조롱",
+    "공개 망신 주기",
+    "법적 위험이 있는 표현",
+    "상대의 외모·가족·직업을 역공격하는 말",
+    "특정 집단 비하",
+    "지나친 인터넷 밈",
+    "한국 현실에서 쓰기 어려운 번역체",
+    "관계를 불필요하게 파괴하는 말"
+  ],
+  "source_summary": {
+    "primary_basis": "업로드된 마크다운 보고서",
+    "basis_types": [
+      "전문가 원칙 기반 재구성",
+      "공식 자료 기반 검토 필요",
+      "실제 사례 유형 기반 재구성",
+      "커뮤니케이션 이론 기반"
+    ],
+    "needs_review": [
+      "실제 전문가 감수",
+      "직장 내 괴롭힘 관련 공식 출처 URL 보강",
+      "사용자 테스트로 위험도 조정"
+    ]
+  },
+  "disclaimer": "선넘네는 완벽한 정답을 보장하지 않아요. 다만 화가 나서 아무 말도 못 하고 넘어갈 때, 생각해볼 수 있는 접근법과 위험도를 같이 보여드려요. 그대로 외워서 쓰기보다, 내 상황에 맞게 다듬어서 쓰는 걸 추천해요.",
+  "changelog": [
+    "v3(매운맛·실전주의 카테고리)는 전량 폐기 — 메타포 치환형 펀치라인 반복 문제로 사용 안 함.",
+    "v2 기반으로 직접 수정: W001/R001/P008/F002/C005를 무례상황유형.docx 검증 내용으로 교체.",
+    "신규 추가: R009(칭찬을 가장한 외모비하), W009(동료 논리 합리화 미러링).",
+    "제외: 부당 지시 대응 항목 — 법조문체 스크립트라 실사용성 낮아 보류.",
+    "가짜 일괄 source_basis 문구 제거, 화면에 노출되지 않는 internal_note로 대체(수정된 항목에만 적용).",
+    "나머지 33개 기존 항목은 변경 없음."
+  ]
+}
