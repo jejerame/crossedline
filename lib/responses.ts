@@ -170,6 +170,20 @@ export interface ResultCard {
   fallbackNotice?: string;
 }
 
+// 답변 일부는 자연스러운 표현을 위해 tone 필드 자체가 "되묻기", "농담으로 받아치기" 등
+// 고유한 값으로 바뀌어 있다. 톤 선택 드롭다운(정중하게/차갑게/선 긋기)과의 매칭을 위해
+// reply_id의 -R1/-R2/-R3 순번을 기준으로 톤 버킷을 고정한다 (db 전체에서 일관된 규칙).
+const TONE_BUCKET_BY_SUFFIX: Record<string, string> = {
+  "1": "정중하게",
+  "2": "차갑게",
+  "3": "선 긋기",
+};
+
+function toneBucket(replyId: string): string | null {
+  const suffix = replyId.match(/-R(\d+)$/)?.[1];
+  return suffix ? TONE_BUCKET_BY_SUFFIX[suffix] ?? null : null;
+}
+
 export function buildResultCard(
   situation: Situation,
   replyIndex: number,
@@ -179,7 +193,7 @@ export function buildResultCard(
 ): ResultCard {
   let replies = situation.replies;
   if (tone && tone !== TONE_PLACEHOLDER) {
-    const filtered = replies.filter((r) => r.tone === tone);
+    const filtered = replies.filter((r) => toneBucket(r.reply_id) === tone);
     if (filtered.length > 0) replies = filtered;
   }
   const reply = replies[replyIndex % replies.length];
