@@ -14,10 +14,14 @@ import {
   buildResultCard,
   getSituationById,
   getCategoryExample,
+  getSituationsByDisplayCategory,
   type ResultCard,
   type Situation,
 } from "../lib/responses";
 import { canUseSearch, consumeSearch } from "../lib/usageLimit";
+
+const FEEDBACK_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSePPV-oZtKpQjFSpjH-fS_Nv3deoY9w3sO-S4RHclFZEFmfCw/viewform?usp=publish-editor";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -31,6 +35,7 @@ export default function Home() {
   const [useBanmal, setUseBanmal] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [showInfoTip, setShowInfoTip] = useState(false);
+  const [showFeedbackTip, setShowFeedbackTip] = useState(false);
   const [isSearching, setIsSearching] = useState(false);
   const screenRef = useRef<HTMLElement>(null);
 
@@ -114,6 +119,17 @@ export default function Home() {
     }
   };
 
+  // 카테고리 칩에서 상황을 바로 클릭했을 때 — 키워드 매칭/Claude API 거치지 않고 즉시 결과 표시
+  const handlePickSituation = (situation: Situation) => {
+    if (!canUseSearch()) {
+      setCard(null);
+      setNotice("오늘의 추천은 다 받았어요! 내일 다시 와주세요");
+      return;
+    }
+    consumeSearch();
+    showSituation(situation);
+  };
+
   const handleToggleBanmal = () => {
     if (!currentSituation) return;
     const next = !useBanmal;
@@ -191,14 +207,29 @@ export default function Home() {
       : null;
 
   return (
-    <main ref={screenRef} className="seon-screen" onClick={() => { setOpenChip(null); setShowInfoTip(false); }}>
+    <main ref={screenRef} className="seon-screen" onClick={() => { setOpenChip(null); setShowInfoTip(false); setShowFeedbackTip(false); }}>
       <div className="seon-bg-watermark" aria-hidden="true">
         <div className="seon-wm-dots">•••</div>
       </div>
 
-      <button className="seon-bell" aria-label="알림" type="button">
-        ♧
-      </button>
+      <div className="seon-feedback-wrap" onClick={(e) => e.stopPropagation()}>
+        <a
+          className="seon-feedback-btn"
+          href={FEEDBACK_FORM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="피드백 보내기"
+          onMouseEnter={() => setShowFeedbackTip(true)}
+          onMouseLeave={() => setShowFeedbackTip(false)}
+        >
+          <span className="seon-icon-mail" aria-hidden="true" />
+        </a>
+        {showFeedbackTip && (
+          <div className="seon-feedback-tip" role="tooltip">
+            피드백 보내기
+          </div>
+        )}
+      </div>
 
       <Image
         className="seon-logo"
@@ -354,13 +385,34 @@ export default function Home() {
                   }
                   onClick={() => {
                     setCategoryLabel(option);
-                    setOpenChip(null);
                     setNotice(null);
+                    // 카테고리만 바꾼 거면 드롭다운을 안 닫고 아래 상황 목록을 바로 갈아끼움
+                    if (option === CATEGORY_PLACEHOLDER) setOpenChip(null);
                   }}
                 >
                   {option}
                 </button>
               ))}
+              {categoryLabel !== CATEGORY_PLACEHOLDER && (
+                <div className="seon-situation-picker">
+                  <div className="seon-situation-picker-label">
+                    {categoryLabel} 상황 바로 고르기
+                  </div>
+                  {getSituationsByDisplayCategory(categoryLabel).map((situation) => (
+                    <button
+                      key={situation.id}
+                      type="button"
+                      className="seon-dropdown-item seon-situation-item"
+                      onClick={() => {
+                        setOpenChip(null);
+                        handlePickSituation(situation);
+                      }}
+                    >
+                      {situation.situation_title}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </div>

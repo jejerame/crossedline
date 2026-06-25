@@ -69,6 +69,13 @@ export function getCategoryExample(
   return pool[0];
 }
 
+// 카테고리 선택 시 상황을 바로 고를 수 있는 칩 목록 (자유 입력 매칭을 거치지 않는 직접 선택용)
+export function getSituationsByDisplayCategory(displayCategory: string): Situation[] {
+  const dbCategory = CATEGORY_MAP[displayCategory];
+  if (!dbCategory) return [];
+  return db.filter((s) => s.category === dbCategory);
+}
+
 // Claude API에 보낼 situation 컨텍스트 (멘트 본문은 빼고 매칭에 필요한 정보만)
 export function buildMatchContext(displayCategory?: string) {
   const dbCategory = displayCategory ? CATEGORY_MAP[displayCategory] : undefined;

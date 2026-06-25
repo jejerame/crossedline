@@ -88,6 +88,71 @@
   padding: 0;
 }
 
+/* 클로버 자리를 대체하는 피드백 버튼 — 같은 위치, 같은 색상, 편지 모양 아이콘 */
+.seon-feedback-wrap {
+  position: absolute;
+  left: 331px;
+  top: 52px;
+}
+
+.seon-feedback-btn {
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.seon-icon-mail {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 13px;
+  border: 1.8px solid var(--seon-primary);
+  border-radius: 2px;
+}
+
+.seon-icon-mail::before {
+  content: "";
+  position: absolute;
+  top: -1.8px;
+  left: -1.8px;
+  width: 0;
+  height: 0;
+  border-left: 10.8px solid transparent;
+  border-right: 10.8px solid transparent;
+  border-top: 7.5px solid var(--seon-primary);
+}
+
+.seon-feedback-tip {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: -4px;
+  background: #333;
+  color: #fff;
+  padding: 7px 11px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: 30;
+  letter-spacing: -0.03em;
+}
+
+.seon-feedback-tip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 8px;
+  border-width: 0 4px 5px;
+  border-style: solid;
+  border-color: transparent transparent #333;
+}
+
 .seon-logo {
   position: absolute;
   left: 58px;
@@ -443,6 +508,32 @@
 .seon-dropdown-item.is-active {
   background: #efe4e8;
   color: var(--seon-primary-dark);
+}
+
+/* 카테고리 드롭다운 안에 상황 칩 목록이 추가로 들어가 좁은 기본 너비로는 부족해 넓힘 */
+.seon-chip-wrap:has(.seon-situation-picker) .seon-dropdown {
+  left: auto;
+  right: 0;
+  width: 220px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.seon-situation-picker {
+  border-top: 1px solid #f1e2e7;
+}
+
+.seon-situation-picker-label {
+  padding: 8px 13px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a98e98;
+}
+
+.seon-situation-item {
+  font-size: 12px;
+  white-space: normal;
+  line-height: 1.35;
 }
 
 .seon-result-section {
