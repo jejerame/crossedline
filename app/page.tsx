@@ -259,16 +259,15 @@ export default function Home() {
         <span>선넘는 말을 검색해 보세요</span>
       </div>
 
-      <Image
-        className="seon-search-mascot"
-        src="/girl1.png"
-        alt=""
-        aria-hidden="true"
-        width={906}
-        height={821}
-      />
-
       <section className="seon-search-card" aria-label="검색어 입력">
+        <Image
+          className="seon-search-mascot"
+          src="/girl1.png"
+          alt=""
+          aria-hidden="true"
+          width={906}
+          height={821}
+        />
         <input
           className="seon-input"
           placeholder="예: 결혼 안 하냐, 결혼"

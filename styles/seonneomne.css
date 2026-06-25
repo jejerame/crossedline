@@ -14,11 +14,19 @@
   --seon-shadow: 0 10px 24px rgba(214, 89, 130, 0.11);
 }
 
+/* 실제 폰 화면 기준 production 레이아웃.
+   390x694 픽셀 프로토타입의 절대좌표를 걷어내고, 세로 flow + 가변 너비로 전환.
+   세로 길이가 다른 기기(iPhone SE 667 ~ Pro Max 926)에서도 잘리거나
+   빈 공간이 남지 않도록 min-height는 100dvh, 내용은 자연스럽게 흐르게 둔다. */
 .seon-screen {
   position: relative;
-  width: 390px;
-  min-height: 694px;
+  width: 100%;
+  max-width: 430px;
+  min-height: 100dvh;
   margin: 0 auto;
+  padding: calc(56px + env(safe-area-inset-top)) 20px
+    calc(32px + env(safe-area-inset-bottom));
+  box-sizing: border-box;
   overflow-x: hidden;
   color: var(--seon-text);
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
@@ -30,8 +38,8 @@
 
 .seon-bg-watermark {
   position: absolute;
-  left: 225px;
-  top: 86px;
+  right: 0;
+  top: 64px;
   width: 165px;
   height: 145px;
   opacity: 0.12;
@@ -39,6 +47,7 @@
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .seon-bg-watermark::before {
@@ -76,8 +85,8 @@
 
 .seon-bell {
   position: absolute;
-  left: 331px;
-  top: 52px;
+  right: 20px;
+  top: 16px;
   width: 22px;
   height: 22px;
   border: 0;
@@ -88,16 +97,16 @@
   padding: 0;
 }
 
-/* 클로버 자리를 대체하는 피드백 버튼 — 같은 위치, 같은 색상, 편지 모양 아이콘 */
+/* 클로버 자리를 대체하는 피드백 버튼 — 화면 우상단, 너비에 상관없이 항상 같은 자리 */
 .seon-feedback-wrap {
   position: absolute;
-  left: 331px;
-  top: 52px;
+  right: 16px;
+  top: calc(16px + env(safe-area-inset-top));
 }
 
 .seon-feedback-btn {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
   border: 0;
   background: transparent;
   padding: 0;
@@ -154,31 +163,25 @@
 }
 
 .seon-logo {
-  position: absolute;
-  left: 58px;
-  top: 38px;
-  width: 198px;
-  height: 58px;
+  display: block;
+  width: 158px;
+  height: 46px;
   object-fit: contain;
   object-position: left center;
+  margin: 0 0 8px;
 }
 
 .seon-subtitle {
-  position: absolute;
-  left: 64px;
-  top: 109px;
-  margin: 0;
+  margin: 0 0 6px;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: -0.04em;
 }
 
 .seon-top-disclaimer {
-  position: absolute;
-  left: 64px;
-  top: 130px;
-  width: 280px;
-  margin: 0;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 0 20px;
   color: #9a9a9a;
   font-size: 10px;
   font-weight: 400;
@@ -198,12 +201,10 @@
 }
 
 .seon-search-label {
-  position: absolute;
-  left: 64px;
-  top: 214px;
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 0 0 14px;
   color: var(--seon-primary);
   font-size: 14px;
   font-weight: 500;
@@ -217,6 +218,7 @@
   border-radius: 50%;
   display: inline-block;
   position: relative;
+  flex-shrink: 0;
 }
 
 .seon-icon-search::after {
@@ -231,21 +233,23 @@
   transform: rotate(45deg);
 }
 
+/* 검색창 옆 마스코트 — 카드 안으로 옮겨서 카드 위치가 유동적으로 바뀌어도 항상 카드에 붙어있음 */
 .seon-search-mascot {
   position: absolute;
-  left: 18px;
-  top: 244px;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 34px;
   height: 31px;
   object-fit: contain;
+  pointer-events: none;
 }
 
 .seon-search-card {
-  position: absolute;
-  left: 51px;
-  top: 236px;
-  width: 295px;
-  height: 46px;
+  position: relative;
+  width: 100%;
+  height: 52px;
+  margin: 0 0 14px;
   border-radius: 16px;
   background: var(--seon-card);
   box-shadow: var(--seon-shadow);
@@ -253,17 +257,17 @@
 
 .seon-input {
   position: absolute;
-  left: 21px;
+  left: 24px;
+  right: 98px;
   top: 0;
-  width: 180px;
-  height: 46px;
+  height: 100%;
   border: 0;
   background: transparent;
   outline: none;
   color: var(--seon-text);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.045em;
   font-family: inherit;
 }
 
@@ -273,14 +277,14 @@
 
 .seon-info-wrap {
   position: absolute;
-  right: 74px;
+  right: 78px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .seon-info-btn {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   border: 1.5px solid var(--seon-primary);
   border-radius: 50%;
   background: transparent;
@@ -322,10 +326,11 @@
 
 .seon-input-button {
   position: absolute;
-  right: 10px;
-  top: 7px;
-  width: 57px;
-  height: 33px;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 64px;
+  height: 40px;
   border: 0;
   border-radius: 12px;
   color: #fff;
@@ -337,20 +342,18 @@
 }
 
 .seon-tag-chips {
-  position: absolute;
-  left: 51px;
-  top: 292px;
-  width: 295px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px;
+  margin: 0 0 14px;
 }
 
 .seon-tag-chip {
   border: 0;
   border-radius: 999px;
-  padding: 4px 11px;
+  padding: 7px 13px;
   font-family: "Gamja Flower", "Pretendard", cursive, sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -367,17 +370,17 @@
 }
 
 .seon-chips {
-  position: absolute;
-  left: 51px;
-  top: 351px;
-  width: 295px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+  margin: 0 0 4px;
 }
 
 .seon-banmal-toggle {
-  flex: 0 0 84px;
-  height: 38px;
+  flex: 0 0 auto;
+  min-width: 84px;
+  height: 44px;
   border: 0;
   border-radius: 10px;
   background: var(--seon-card);
@@ -391,10 +394,11 @@
 
 .seon-chip-wrap {
   position: relative;
+  flex: 1 1 120px;
 }
 
 .seon-chip {
-  height: 38px;
+  height: 44px;
   border: 0;
   border-radius: 10px;
   background: var(--seon-card);
@@ -492,7 +496,7 @@
   border: 0;
   background: transparent;
   text-align: left;
-  padding: 10px 13px;
+  padding: 12px 13px;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -514,7 +518,7 @@
 .seon-chip-wrap:has(.seon-situation-picker) .seon-dropdown {
   left: auto;
   right: 0;
-  width: 220px;
+  width: min(240px, 100%);
   max-height: 320px;
   overflow-y: auto;
 }
@@ -538,26 +542,23 @@
 
 .seon-result-section {
   position: relative;
-  margin-top: 411px;
   width: 100%;
-  padding-bottom: 24px;
+  margin-top: 28px;
 }
 
 .seon-result-label {
-  position: relative;
-  left: 52px;
-  color: var(--seon-primary);
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--seon-primary);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.035em;
 }
 
 .seon-fallback-notice {
-  margin: 12px auto 0;
-  width: 296px;
+  width: 100%;
+  margin: 12px 0 0;
   text-align: center;
   color: #a98e98;
   font-size: 11px;
@@ -568,14 +569,15 @@
 
 .seon-quote-card {
   position: relative;
-  margin: 12px auto 0;
-  width: 296px;
+  width: 100%;
   min-height: 99px;
+  margin: 12px 0 0;
   padding: 16px 24px;
   border-radius: 14px;
   background: var(--seon-card);
   box-shadow: var(--seon-shadow);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .seon-badge {
@@ -669,14 +671,15 @@
 
 .seon-principle {
   position: relative;
-  margin: 12px auto 0;
-  width: 296px;
+  width: 100%;
   min-height: 99px;
+  margin: 12px 0 0;
   padding: 16px 24px;
   border-radius: 14px;
   background: var(--seon-card);
   box-shadow: var(--seon-shadow);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .seon-principle h2 {
@@ -697,8 +700,8 @@
 }
 
 .seon-actions {
-  margin: 13px auto 0;
-  width: 292px;
+  width: 100%;
+  margin: 13px 0 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -710,7 +713,7 @@
 }
 
 .seon-main-action {
-  height: 35px;
+  height: 48px;
   width: 100%;
   border: 0;
   border-radius: 8px;
@@ -739,4 +742,3 @@
   font-size: 15px;
   line-height: 1;
 }
-
