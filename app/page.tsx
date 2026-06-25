@@ -377,11 +377,9 @@ export default function Home() {
                   onClick={() => {
                     setCategoryLabel(option);
                     setNotice(null);
-                    // 입력창에 검색어가 있으면 카테고리만 고르고 바로 닫음.
-                    // 입력창이 비어 있을 때만 아래 상황 목록을 보여주기 위해 열어둠.
-                    if (option === CATEGORY_PLACEHOLDER || query.trim()) {
-                      setOpenChip(null);
-                    }
+                    // 카테고리만 바꾼 거면 드롭다운을 안 닫고 아래 상황 목록을 바로 갈아끼움.
+                    // 바깥(입력 버튼 포함)을 클릭하면 main의 onClick이 버블링돼 자동으로 닫힘.
+                    if (option === CATEGORY_PLACEHOLDER) setOpenChip(null);
                   }}
                 >
                   {option}
