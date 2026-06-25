@@ -51,24 +51,6 @@ export function getPrincipleByLabel(label: string): RecommendedPrinciple | null 
   return PRINCIPLES.find((p) => p.principle_label === label) ?? null;
 }
 
-// situation_id 매칭이 안 됐을 때, 카테고리 안에서 해당 원칙을 쓰는 situation을 우선 찾고
-// 없으면 카테고리의 첫 situation으로 대체 (항상 무언가는 반환되도록)
-export function getCategoryExample(
-  displayCategory: string,
-  principleLabel?: string | null
-): Situation | null {
-  const dbCategory = CATEGORY_MAP[displayCategory];
-  const pool = dbCategory ? db.filter((s) => s.category === dbCategory) : db;
-  if (pool.length === 0) return null;
-  if (principleLabel) {
-    const withPrinciple = pool.find((s) =>
-      s.recommended_principles.some((p) => p.principle_label === principleLabel)
-    );
-    if (withPrinciple) return withPrinciple;
-  }
-  return pool[0];
-}
-
 // 카테고리 선택 시 상황을 바로 고를 수 있는 칩 목록 (자유 입력 매칭을 거치지 않는 직접 선택용)
 export function getSituationsByDisplayCategory(displayCategory: string): Situation[] {
   const dbCategory = CATEGORY_MAP[displayCategory];

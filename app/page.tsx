@@ -13,7 +13,6 @@ import {
   findSituation,
   buildResultCard,
   getSituationById,
-  getCategoryExample,
   getSituationsByDisplayCategory,
   type ResultCard,
   type Situation,
@@ -51,6 +50,11 @@ export default function Home() {
     if (!canUseSearch()) {
       setCard(null);
       setNotice("오늘의 추천은 다 받았어요! 내일 다시 와주세요");
+      return;
+    }
+    if (toneLabel === TONE_PLACEHOLDER) {
+      setCard(null);
+      setNotice("톤을 먼저 선택해 주세요");
       return;
     }
     if (categoryLabel === CATEGORY_PLACEHOLDER) {
@@ -94,26 +98,12 @@ export default function Home() {
         return;
       }
 
-      const example = getCategoryExample(categoryLabel, result.principle_label);
-      if (example) {
-        consumeSearch();
-        showSituation(
-          example,
-          "정확히 같은 상황은 아직 없지만, 보통 이 원칙이 도움이 될 수 있어요"
-        );
-        return;
-      }
+      // 카테고리는 선택했지만 그 안에 맞는 상황이 없는 경우 — 대표 예시로 얼버무리지 않고 명확히 안내
+      setCard(null);
+      setNotice("이 카테고리에는 맞는 상황을 찾지 못했어요. 다른 카테고리를 선택해 보세요");
     } catch {
-      // API 실패 시에도 빈 화면 대신 카테고리 대표 예시로 대체
-      const example = getCategoryExample(categoryLabel);
-      if (example) {
-        consumeSearch();
-        showSituation(
-          example,
-          "정확히 같은 상황은 아직 없지만, 보통 이 원칙이 도움이 될 수 있어요"
-        );
-        return;
-      }
+      setCard(null);
+      setNotice("이 카테고리에는 맞는 상황을 찾지 못했어요. 다른 카테고리를 선택해 보세요");
     } finally {
       setIsSearching(false);
     }
@@ -126,6 +116,8 @@ export default function Home() {
       setNotice("오늘의 추천은 다 받았어요! 내일 다시 와주세요");
       return;
     }
+    // 입력창에 남은 검색어로 다시 검색하면 이 선택과 다른 결과가 나올 수 있어 비워둠
+    setQuery("");
     consumeSearch();
     showSituation(situation);
   };
@@ -385,8 +377,11 @@ export default function Home() {
                   onClick={() => {
                     setCategoryLabel(option);
                     setNotice(null);
-                    // 카테고리만 바꾼 거면 드롭다운을 안 닫고 아래 상황 목록을 바로 갈아끼움
-                    if (option === CATEGORY_PLACEHOLDER) setOpenChip(null);
+                    // 입력창에 검색어가 있으면 카테고리만 고르고 바로 닫음.
+                    // 입력창이 비어 있을 때만 아래 상황 목록을 보여주기 위해 열어둠.
+                    if (option === CATEGORY_PLACEHOLDER || query.trim()) {
+                      setOpenChip(null);
+                    }
                   }}
                 >
                   {option}
