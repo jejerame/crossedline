@@ -117,24 +117,10 @@
 }
 
 .seon-icon-mail {
-  position: relative;
   display: inline-block;
-  width: 18px;
-  height: 13px;
-  border: 1.8px solid var(--seon-primary);
-  border-radius: 2px;
-}
-
-.seon-icon-mail::before {
-  content: "";
-  position: absolute;
-  top: -1.8px;
-  left: -3.6px;
-  width: 0;
-  height: 0;
-  border-left: 10.8px solid transparent;
-  border-right: 10.8px solid transparent;
-  border-top: 7.5px solid var(--seon-primary);
+  font-size: 19px;
+  line-height: 1;
+  font-style: normal;
 }
 
 .seon-feedback-tip {

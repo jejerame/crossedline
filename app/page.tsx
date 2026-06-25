@@ -214,7 +214,7 @@ export default function Home() {
           onMouseEnter={() => setShowFeedbackTip(true)}
           onMouseLeave={() => setShowFeedbackTip(false)}
         >
-          <span className="seon-icon-mail" aria-hidden="true" />
+          <span className="seon-icon-mail" aria-hidden="true">💌</span>
         </a>
         {showFeedbackTip && (
           <div className="seon-feedback-tip" role="tooltip">
