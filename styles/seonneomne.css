@@ -222,7 +222,7 @@
 /* 검색창 옆 마스코트 — 카드 안으로 옮겨서 카드 위치가 유동적으로 바뀌어도 항상 카드에 붙어있음 */
 .seon-search-mascot {
   position: absolute;
-  left: -12px;
+  left: 4px;
   top: 50%;
   transform: translateY(-50%);
   width: 34px;
