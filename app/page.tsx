@@ -201,6 +201,8 @@ export default function Home() {
   // 카테고리를 아직 안 골랐을 때 드롭다운에 미리 보여줄 기본 카테고리 (목록의 첫 실제 카테고리)
   const previewCategory =
     categoryLabel === CATEGORY_PLACEHOLDER ? CATEGORY_OPTIONS[1] : categoryLabel;
+  // 검색창에 글자가 있으면 상황 바로 고르기 버튼은 보이되 클릭 못 하게 막음
+  const hasQuery = query.trim().length > 0;
 
   return (
     <main ref={screenRef} className="seon-screen" onClick={() => { setOpenChip(null); setShowInfoTip(false); setShowFeedbackTip(false); }}>
@@ -398,7 +400,11 @@ export default function Home() {
                   <button
                     key={situation.id}
                     type="button"
-                    className="seon-dropdown-item seon-situation-item"
+                    disabled={hasQuery}
+                    className={
+                      "seon-dropdown-item seon-situation-item" +
+                      (hasQuery ? " is-disabled" : "")
+                    }
                     onClick={() => {
                       setOpenChip(null);
                       if (categoryLabel === CATEGORY_PLACEHOLDER) setCategoryLabel(previewCategory);

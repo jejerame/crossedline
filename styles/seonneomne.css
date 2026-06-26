@@ -526,6 +526,11 @@
   line-height: 1.35;
 }
 
+.seon-situation-item.is-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .seon-result-section {
   position: relative;
   width: 100%;
