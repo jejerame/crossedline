@@ -256,6 +256,7 @@ export default function Home() {
         <span className="seon-icon-search" aria-hidden="true" />
         <span>선넘는 말을 검색해 보세요</span>
       </div>
+      <p className="seon-search-hint">정확한 상황이 있다면 카테고리에서 바로 골라보세요</p>
 
       <section className="seon-search-card" aria-label="검색어 입력">
         <Image
