@@ -198,6 +198,10 @@ export default function Home() {
         }
       : null;
 
+  // 카테고리를 아직 안 골랐을 때 드롭다운에 미리 보여줄 기본 카테고리 (목록의 첫 실제 카테고리)
+  const previewCategory =
+    categoryLabel === CATEGORY_PLACEHOLDER ? CATEGORY_OPTIONS[1] : categoryLabel;
+
   return (
     <main ref={screenRef} className="seon-screen" onClick={() => { setOpenChip(null); setShowInfoTip(false); setShowFeedbackTip(false); }}>
       <div className="seon-bg-watermark" aria-hidden="true">
@@ -385,26 +389,26 @@ export default function Home() {
                   {option}
                 </button>
               ))}
-              {categoryLabel !== CATEGORY_PLACEHOLDER && (
-                <div className="seon-situation-picker">
-                  <div className="seon-situation-picker-label">
-                    {categoryLabel} 상황 바로 고르기
-                  </div>
-                  {getSituationsByDisplayCategory(categoryLabel).map((situation) => (
-                    <button
-                      key={situation.id}
-                      type="button"
-                      className="seon-dropdown-item seon-situation-item"
-                      onClick={() => {
-                        setOpenChip(null);
-                        handlePickSituation(situation);
-                      }}
-                    >
-                      {situation.situation_title}
-                    </button>
-                  ))}
+              {/* 카테고리를 아직 안 골랐어도 첫 카테고리 상황 목록을 미리 보여줌 — 처음 열었을 때부터 "세세한 항목이 있다"는 걸 바로 알 수 있게 */}
+              <div className="seon-situation-picker">
+                <div className="seon-situation-picker-label">
+                  {previewCategory} 상황 바로 고르기
                 </div>
-              )}
+                {getSituationsByDisplayCategory(previewCategory).map((situation) => (
+                  <button
+                    key={situation.id}
+                    type="button"
+                    className="seon-dropdown-item seon-situation-item"
+                    onClick={() => {
+                      setOpenChip(null);
+                      if (categoryLabel === CATEGORY_PLACEHOLDER) setCategoryLabel(previewCategory);
+                      handlePickSituation(situation);
+                    }}
+                  >
+                    {situation.situation_title}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
         </div>
